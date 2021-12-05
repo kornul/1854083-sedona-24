@@ -11,7 +11,7 @@
   <div class="page-wrepper">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__top-logo" src="img/backdesktopform.svg" width="320" height="214" alt="Горы Седоны">
+        <img class="page-header__top-logo" src="img/backdesktop.jpg" width="320" height="214" alt="Горы Седоны">
         <img class="page-header__top-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
       </a>
       <nav class="main-nav">
@@ -52,39 +52,33 @@
         <div class="feedback__wrap">
           <div class="feedback__content">
             <h1 class="feedback__title">Оставьте свой отзыв</h1>
-            <span class="feedback__text">Помогите нашим отелям стать лучше!
-              Оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+            <p class="feedback__text">Помогите нашим отелям стать лучше!
+              Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </div>
 
       </section>
 
 
-      <form class="form" action="" method="post">
+      <form class="form" action="https://htmlacademy.ru" method="post">
         <fieldset class="user-fieldset">
-          <p class="user-fieldset__title">Представьтесь:</p>
+          <legend class="user-fieldset__title">Представьтесь:</legend>
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Имя*:</span>
-            <span class="user-fieldset__input">
-              <input class="text-field__input" type="text" name="name" placeholder="Петр">
-            </span>
+              <input class="text-field__input" type="text" name="name" placeholder=""  required>
           </label>
 
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Фамилия*:</span>
-            <span class="user-fieldset__input">
-              <input class="text-field__input" type="text" name="surname" placeholder="Иванов">
-            </span>
+              <input class="text-field__input" type="text" name="surname" placeholder="" required>
           </label>
 
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Отсчество*:</span>
-            <span class="user-fieldset__input">
-              <input class="text-field__input" type="text" name="patronymic" placeholder="Александрович">
-            </span>
+              <input class="text-field__input" type="text" name="patronymic" placeholder="">
           </label>
         </fieldset>
 
@@ -97,7 +91,7 @@
             <span class="contacts-fieldset__field-name contacts-fieldset__field-name--phone">Контактный
               телефон*:</span>
             <span class="contacts-fieldset__input contacts-fieldset__input--phone-icon">
-              <input class="text-field__input" type="text" placeholder="Введите телефон">
+              <input class="text-field__input" type="text" placeholder="Введите телефон" required>
             </span>
           </label>
 
@@ -105,7 +99,7 @@
             <span class="contacts-fieldset__field-name contacts-fieldset__field-name--email">Электронная
               почта*:</span>
             <span class="contacts-fieldset__input contacts-fieldset__input--email-icon">
-              <input class="text-field__input" type="text" placeholder="Введите e-mail">
+              <input class="text-field__input" type="email" placeholder="Введите e-mail">
             </span>
           </label>
         </fieldset>
@@ -118,7 +112,7 @@
 
           <section class="impressions-fieldset__container">
             <label class="radio-holder">
-              <input class="radio-holder__input" type="radio" name="impressions">
+              <input class="radio-holder__input" type="radio" name="impressions" checked>
               <span class="radio-holder__input-text">Скорее положительное</span>
             </label>
           </section>
@@ -144,17 +138,17 @@
 
           <section class="sight__container">
             <label class="checkbox-holder">
-              <input class="checkbox-holder__input" type="checkbox" name="sight">
+              <input class="checkbox-holder__input" type="checkbox" name="sight" checked>
               <span class="checkbox-holder__input-text">Мост Дьявола</span>
             </label>
 
             <label class="checkbox-holder">
-              <input class="checkbox-holder__input" type="checkbox" name="sight">
+              <input class="checkbox-holder__input" type="checkbox" name="sight" checked>
               <span class="checkbox-holder__input-text">Гора-Колокол</span>
             </label>
 
             <label class="checkbox-holder">
-              <input class="checkbox-holder__input" type="checkbox" name="sight">
+              <input class="checkbox-holder__input" type="checkbox" name="sight" checked>
               <span class="checkbox-holder__input-text">Слайд-парк</span>
             </label>
 
@@ -168,15 +162,16 @@
         <fieldset class="emotions">
           <p class="emotions__title">Опишите свои эмоции:</p>
 
-          <section class="emotions__container">
+          <label class="emotions__container">
             <textarea class="emotions__input" name="emotions"
               placeholder="Опишите подробно все свои восторги"></textarea>
-          </section>
-        </fieldset>
+          </label>
 
-        <section class="emotions__send-button">
-          <input class="button button--send-emotions" type="submit" value="Отправить Отзыв" name="emotions">
+
+        <section class="emotions__send">
+          <input class="emotions__button" type="submit" value="Отправить Отзыв" name="emotions">
         </section>
+      </fieldset>
       </form>
     </main>
 
@@ -207,24 +202,27 @@
 
     </footer>
 
+
+    <section class="popup">
+      <div class="popup__text">
+        <h2>Что-то пошло не так!</h2>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <input class="button" type="button" value="ок">
+      </div>
+    </section>
+
+    <section class="popup">
+      <div class="popup__text">
+        <h2>Ваш отзыв отправлен!</h2>
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <input class="button" type="button" value="закрыть окно">
+      </div>
+    </section>
+
+
 </body>
 
 </html>
 
 
 
-<section class="popup">
-  <div class="popup__text">
-    <h2>Что-то пошло не так!</h2>
-    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <input class="button" type="button" value="ок">
-  </div>
-</section>
-
-<section class="popup">
-  <div class="popup__text">
-    <h2>Ваш отзыв отправлен!</h2>
-    <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <input class="button" type="button" value="закрыть окно">
-  </div>
-</section>
