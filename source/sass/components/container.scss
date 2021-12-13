@@ -1,0 +1,28 @@
+.container {
+  padding-top: 32px;
+  padding-right: 21px;
+  padding-bottom: 61px;
+  padding-left: 23px;
+  text-align: center;
+}
+
+.container__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.container__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
