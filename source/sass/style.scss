@@ -6,10 +6,8 @@
 // Components
 @import "./components/main-nav.scss";
 @import "./components/page-content.scss";
-@import "./components/page-content__banner.scss";
 @import "./components/page-intro.scss";
 @import "./components/reason.scss";
-@import "./components/reason__city.scss";
 @import "./components/hotel-search-text.scss";
 @import "./components/map.scss";
 @import "./components/page-footer.scss";
@@ -19,9 +17,10 @@
 @import "./components/form.scss";
 @import "./components/user-fieldset.scss";
 @import "./components/contacts-fieldset.scss";
-@import "./components/impressions-fieldset.scss";
+@import "./components/text-field.scss";
+@import "./components/popup-error.scss";
+@import "./components/popup-comment.scss";
 @import "./components/radio-holder.scss";
-@import "./components/popup-content.scss";
 @import "./components/sight.scss";
 @import "./components/checkbox-holder.scss";
 @import "./components/emotions.scss";

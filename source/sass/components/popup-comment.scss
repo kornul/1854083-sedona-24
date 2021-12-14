@@ -1,10 +1,9 @@
-.emotions {
-  border: none;
+.popup-comment {
+  margin: 0 auto;
   padding: 0;
-  margin-bottom: 51px;
 }
 
-.emotions__title {
+.popup-comment__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -13,20 +12,19 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 15px;
 }
 
-.emotions__textarea {
-  width: 279px;
-  height: 160px;
-  background-color: #f2f2f2;
-  margin-right: 22px;
-  margin-left: 19px;
-  margin-bottom: 51px;
-  padding: 0;
+.popup-comment__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.emotions__submit {
+.popup-comment__close {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -40,5 +38,7 @@
   background-color: #81b3d2;
   border: none;
   color: #ffffff;
-  margin-left: 19px;
+  margin-top: 49px;
+  margin-bottom: 30px;
+  margin-left: 20px;
 }

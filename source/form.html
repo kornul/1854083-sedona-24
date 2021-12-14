@@ -131,15 +131,6 @@
             <span class="radio-holder__input-text">Затрудняюсь ответить</span>
           </label>
         </section>
-
-
-        <section class="impressions-fieldset__popup">
-          <section class="popup-content">
-            <h3 class="popup-content__title">Что-то пошло не так!</h3>
-            <p class="popup-content__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить </p>
-            <button class="impressions-fieldset__popup-close" type="button">ок</button>
-          </section>
-        </section>
       </fieldset>
 
       <fieldset class="sight">
@@ -172,19 +163,9 @@
         <legend class="emotions__title">Опишите свои эмоции:</legend>
 
         <label class="visually-hidden" for="comment">Комментарий</label>
-        <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги" id="comment"></textarea>
-
-
-        <section class="emotions__popup">
-          <section class="popup-content">
-            <h3 class="popup-content__title">Ваш отзыв отправлен!</h3>
-            <p class="popup-content__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-              опубликуем его на сайте.</p>
-            <button class="emotions__popup-close" type="button">Закрыть окно</button>
-
-            <input class="emotions__submit" type="submit" value="Отправить Отзыв">
-          </section>
-        </section>
+        <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
+          id="comment"></textarea>
+        <input class="emotions__submit" type="submit" value="Отправить Отзыв">
       </fieldset>
     </form>
   </main>
@@ -206,21 +187,26 @@
     </ul>
 
 
-
     <div class="copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
       </a>
     </div>
-
   </footer>
 
+  <section class="popup-error">
+    <h3 class="popup-error__title">Что-то пошло не так!</h3>
+    <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить </p>
+    <button class="popup-error__close" type="button">ок</button>
+  </section>
 
-
-
-
-
+  <section class="popup-comment">
+    <h3 class="popup-comment__title">Ваш отзыв отправлен!</h3>
+    <p class="popup-comment__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте.</p>
+    <button class="popup-comment__close" type="button">Закрыть окно</button>
+  </section>
 </body>
 
 </html>

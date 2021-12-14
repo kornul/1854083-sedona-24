@@ -1,3 +1,123 @@
 .reason {
   background-color: #ffffff;
 }
+
+.reason__city {
+  background-color: #81b3d2;
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-left: 18px;
+  padding-bottom: 39px;
+}
+
+.reason__blue-title {
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
+.reason__blue-number {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.reason__blue-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-picture {
+  margin-bottom: 26px;
+}
+
+.reason__list {
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style-type: none;
+  color: #000000;
+}
+
+.reason__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.reason__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.reason__bridge {
+  background-color: #81b3d2;
+  margin-top: 39px;
+  margin-right: 16px;
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+
+.reason-other {
+  background-color: #eeeeee;
+}
+
+.reason-other__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.reason-other__number {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.reason-other__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 62px;
+}

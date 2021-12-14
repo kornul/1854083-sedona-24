@@ -28,7 +28,13 @@
 }
 
 .gallery__number {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 38px;
 }
