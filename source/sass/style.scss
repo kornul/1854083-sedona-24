@@ -1,1 +1,33 @@
-// Начните писать стили здесь
+@import "./font-face.scss";
+
+// Globals
+@import "./globals/globals.scss";
+
+// Components
+@import "./components/main-nav.scss";
+@import "./components/page-content.scss";
+@import "./components/page-intro.scss";
+@import "./components/reason.scss";
+@import "./components/reason-picture.scss";
+@import "./components/reason-other.scss";
+@import "./components/hotel-search-text.scss";
+@import "./components/map.scss";
+@import "./components/page-footer.scss";
+@import "./components/social.scss";
+@import "./components/copyright.scss";
+@import "./components/feedback.scss";
+@import "./components/form.scss";
+@import "./components/user-fieldset.scss";
+@import "./components/contacts-fieldset.scss";
+@import "./components/text-field.scss";
+@import "./components/popup-error.scss";
+@import "./components/popup-comment.scss";
+@import "./components/radio-holder.scss";
+@import "./components/sight.scss";
+@import "./components/checkbox-holder.scss";
+@import "./components/emotions.scss";
+@import "./components/column.scss";
+@import "./components/container.scss";
+@import "./components/gallery.scss";
+@import "./components/button-like.scss";
+@import "./components/container-video.scss";

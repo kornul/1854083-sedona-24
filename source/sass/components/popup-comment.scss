@@ -1,0 +1,44 @@
+.popup-comment {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.popup-comment__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup-comment__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup-comment__close {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  color: #ffffff;
+  margin-top: 49px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}

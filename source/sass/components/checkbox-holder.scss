@@ -1,0 +1,17 @@
+.checkbox-holder {
+  text-align: center;
+  display: flex;
+}
+
+.checkbox-holder__input {
+  border: 5px solid #f2f2f2;
+  margin-right: 29px;
+}
+
+.checkbox-holder__input-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
