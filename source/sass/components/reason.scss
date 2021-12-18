@@ -53,6 +53,17 @@
   padding: 0;
   list-style-type: none;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
+.reason__item {
+  margin: 0;
+  padding: 0;
 }
 
 .reason__title {
@@ -79,8 +90,9 @@
 
 .reason__bridge {
   background-color: #81b3d2;
-  margin-top: 39px;
-  margin-right: 16px;
-  margin-bottom: 35px;
-  margin-left: 15px;
+  padding-top: 39px;
+  padding-right: 16px;
+  padding-bottom: 35px;
+  padding-left: 15px;
 }
+

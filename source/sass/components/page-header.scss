@@ -1,8 +1,18 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  margin: 0 auto;
 }
 
-.page-header__top-text {
-  background-color: #223222;
+.page-header__logo {
+  height: 84px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 96px;
+  }
 }

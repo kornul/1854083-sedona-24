@@ -3,6 +3,27 @@
   margin: 0 auto;
 }
 
+
 .page-content__banner {
-  background-color: #223222;
+  background-color: #ffffff;
+  height: 390px;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 518px;
+  }
+}
+
+.page-content__banner-backdrop {
+  position: absolute;
+  margin: 0;
+}
+
+.page-content__banner-small {
+  position: relative;
+  padding-top: 90px;
+  padding-left: 19px;
 }
