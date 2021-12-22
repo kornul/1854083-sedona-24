@@ -1,5 +1,15 @@
 .reason-other {
+  margin: 0 auto;
   background-color: #eeeeee;
+}
+
+.reason-other__more {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .reason-other__title {

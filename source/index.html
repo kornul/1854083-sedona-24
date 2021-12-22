@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" lang="ru">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -45,16 +46,13 @@
 
       </nav>
 
-      <div class="page-header__logo">
-        <img class="page-header__top-logo" src="img/sedonamain.jpg" alt="Горы Седоны" width="320" height="388">
-      </div>
     </header>
-  </div>
 
 
 
   <main class="page-content">
     <section class="page-content__banner">
+      <img class="page-content__banner-backdrop" src="img/sedonamain.jpg" alt="Горы Седоны" width="320" height="388">
       <img class="page-content__banner-small" src="img/logotext.svg" alt="Добро пожаловать в Седону" width="282"
         height="214">
     </section>
@@ -74,11 +72,9 @@
         <p class="reason__blue-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
 
-
-      <div class="reason-picture">
+      <div class="reason-city">
         <img src="img/photocity.jpg" alt="Город" width="320" height="260">
       </div>
-
 
       <ul class="reason__list">
         <li class="reason__item reason__item--house">
@@ -95,22 +91,19 @@
         </li>
       </ul>
 
-
+      <div class="reason-bridge">
+        <img src="img/devilbridge.jpg" alt="Мост" width="320" height="260">
+      </div>
 
       <div class="reason__bridge reason__bridge--blue ">
         <h2 class="reason__blue-title">Там есть мост дьявола</h2>
         <div class="reason__blue-number">-№2-</div>
         <p class="reason__blue-text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
       </div>
+    </section>
 
-
-      <div class="reason-picture">
-        <img src="img/devilbridge.jpg" alt="Мост" width="320" height="260">
-      </div>
-
-
-      <section class="reason-other">
-
+    <section class="reason-other">
+      <div class="reason-other__more">
         <div class="reason-other__header reason-other__header--gray">
           <h2 class="reason-other__title">Небольшая площадь</h2>
           <div class="reason-other__number">-№3-</div>
@@ -126,8 +119,7 @@
           <div class="reason-other__number">-№5-</div>
           <p class="reason-other__text">Большинство едет в гранд каньон и толпится там</p>
         </div>
-
-      </section>
+      </div>
     </section>
 
     <section class="hotel-search-text">
@@ -170,5 +162,6 @@
     </div>
 
   </footer>
+</div>
 </body>
 </html>
