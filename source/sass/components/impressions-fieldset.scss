@@ -2,6 +2,15 @@
   border: none;
   padding: 0;
   margin-bottom: 47px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    gap: 52px;
+  }
 }
 
 .impressions-fieldset__title {
@@ -15,4 +24,8 @@
   text-transform: uppercase;
   margin-bottom: 25px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }

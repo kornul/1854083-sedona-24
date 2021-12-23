@@ -2,6 +2,11 @@
   border: none;
   padding: 0;
   margin-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .emotions__title {
