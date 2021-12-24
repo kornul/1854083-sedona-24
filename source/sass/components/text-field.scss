@@ -1,6 +1,14 @@
 .text-field__input {
-  width: 280px;
+  width: 213px;
   height: 58px;
   border: none;
   background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 216px;
+    height: 58px;
+    border: none;
+    background-color: #f2f2f2;
+  }
 }
