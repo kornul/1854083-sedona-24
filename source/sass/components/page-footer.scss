@@ -3,8 +3,15 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 

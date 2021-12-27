@@ -4,6 +4,12 @@
   padding-bottom: 27px;
   padding-left: 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 484px;
+    margin: 0 auto;
+    padding: 43px 0 52px;
+  }
 }
 
 .page-intro__header {

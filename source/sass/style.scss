@@ -1,10 +1,12 @@
 @import "./font-face.scss";
 
+
 // Globals
 @import "./globals/globals.scss";
 @import "./globals/viewports.scss";
 
 // Components
+@import "./components/visually-hidden.scss";
 @import "./components/main-nav.scss";
 @import "./components/page-header.scss";
 @import "./components/page-content.scss";
