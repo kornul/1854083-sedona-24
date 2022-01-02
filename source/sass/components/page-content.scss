@@ -3,19 +3,43 @@
   margin: 0 auto;
 }
 
+.page-content__inner {
+  text-align: center;
+  padding-top: 62px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+  }
+}
 
 .page-content__banner {
   background-color: #ffffff;
+  background-image: url("/img/backmobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 390px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    background-image: url("/img/backdesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    background-image: url("/img/backdesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.page-content__banner-backdrop {
-  position: absolute;
-  margin: 0;
-}
+.page-content__inner-small {
+  width: 282px;
 
-.page-content__banner-small {
-  position: relative;
-  top: 62px;
-  left: 19px;
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
 }

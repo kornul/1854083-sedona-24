@@ -30,7 +30,7 @@
                 Фото и Видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--feedback">
               <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
@@ -65,11 +65,11 @@
 
     <main class="page-content">
       <section class="page-content__banner">
-        <img class="page-content__banner-backdrop" src="img/sedonamain.jpg" alt="Горы Седоны" width="320" height="388">
-        <img class="page-content__banner-small" src="img/textsedona.svg" alt="Добро пожаловать в Седону" width="282"
+        <section class="page-content__inner">
+        <img class="page-content__inner-small" src="img/textsedona.svg" alt="Добро пожаловать в Седону" width="282"
           height="214">
       </section>
-
+    </section>
 
       <section class="page-intro">
         <h2 class="page-intro__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -86,22 +86,28 @@
         </div>
 
         <div class="reason-city">
-          <img src="img/photocity.jpg" alt="Город" width="320" height="260">
+          <img class="reason-city__place" src="img/photocity.jpg" alt="Город" width="320" height="260">
         </div>
 
         <ul class="reason__list">
+        <div class="reason__wrapper">
           <li class="reason__item">
             <h2 class="reason__title reason__title--house">Жилье</h2>
             <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
+        </div>
+        <div class="reason__wrapper">
           <li class="reason__item ">
             <h2 class="reason__title reason__title--gift">Сувениры</h2>
             <p class="reason__text">Не только китайского, но и местного производства!</p>
           </li>
+        </div>
+        <div class="reason__wrapper">
           <li class="reason__item">
             <h2 class="reason__title reason__title--food">Еда</h2>
             <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
+        </div>
         </ul>
 
         <div class="reason-bridge">

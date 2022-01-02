@@ -60,3 +60,9 @@
   padding-bottom: 17px;
   display: block;
 }
+
+.hotel-search-text__find:hover {
+  @media (min-width: $tablet-width) {
+    background-color: #669ec0;
+  }
+}

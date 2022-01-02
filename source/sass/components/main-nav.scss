@@ -10,12 +10,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: auto;
   }
 }
 
 .main-nav__wrapper {
   background-color: #ffffff;
+  width: auto;
 }
 
 .main-nav__toggle {
@@ -50,6 +51,7 @@
     box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
   }
 }
+
 
 .main-nav--opened {
   @media (max-width: $mobile-width-only) {
@@ -104,16 +106,6 @@
   }
 }
 
-.main-nav__item {
-  @media (max-width: $mobile-width-only) {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    border-top: 1px solid rgba(#ffffff, 0.2);
-    border-bottom: 1px solid rgba(#000000, 0.2);
-  }
-}
-
-
 .main-nav__list {
   position: relative;
   display: block;
@@ -124,20 +116,20 @@
 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 16px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
+    max-width: 1280px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -148,7 +140,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 1200px;
+    max-width: 1280px;
   }
 }
 
@@ -164,14 +156,32 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
-    width: 153px;
-    padding-top: 24px;
-    padding-bottom: 22px;
-    padding-right: 49px;
-    padding-left: 48px;
+    width: 156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #000000;
+    width: 239px;
   }
 }
 
+.main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgba(#ffffff, 0.2);
+    border-bottom: 1px solid rgba(#000000, 0.2);
+  }
+}
+
+
+.main-nav__item--feedback {
+  @media (min-width: $tablet-width) {
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+}
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;

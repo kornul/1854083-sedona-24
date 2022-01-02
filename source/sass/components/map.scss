@@ -5,12 +5,9 @@
 .map iframe {
   border: none;
   display: block;
+  width: auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1280px;
+    width: 100%;
   }
 }
