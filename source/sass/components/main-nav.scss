@@ -17,6 +17,7 @@
 .main-nav__wrapper {
   background-color: #ffffff;
   width: auto;
+  overflow: hidden;
 }
 
 .main-nav__toggle {
@@ -31,6 +32,10 @@
   cursor: pointer;
   border: none;
   padding: 0;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  height: 56px;
 }
 
 .main-nav--closed .main-nav__toggle::before {
