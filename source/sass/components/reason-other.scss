@@ -1,6 +1,12 @@
 .reason-other {
   margin: 0 auto;
   background-color: #eeeeee;
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .reason-other__more {
@@ -9,6 +15,19 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.reason-other--gray {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    margin-top: 42px;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
@@ -38,5 +57,5 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 62px;
+  margin: 0;
 }

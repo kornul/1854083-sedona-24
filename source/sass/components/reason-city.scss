@@ -4,5 +4,15 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: 4;
+    margin: 0;
   }
+}
+
+.reason__city--blue {
+  margin: 0;
+}
+
+
+.reason-city__place {
+  margin: 0;
 }
