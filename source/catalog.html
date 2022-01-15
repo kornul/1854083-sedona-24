@@ -31,7 +31,7 @@
                 Фото и Видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--feedback">
               <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
@@ -44,76 +44,90 @@
           </ul>
         </div>
       </nav>
-
-      <div class="page-header__logo">
-        <img class="page-header__top-logo" src="img/backdesktop.jpg" width="320" height="157" alt="Горы Седоны">
-        <img class="page-header__top-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
-      </div>
     </header>
   </div>
 
   <main class="column">
+    <section class="column__banner">
+      <section class="column__banner-inner">
+        <img class="column__banner-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
+      </section>
+    </section>
+
     <section class="container">
-      <h1 class="container__title">Фото и видео</h1>
-      <p class="container__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
-        и экономике.</p>
+      <section class="container__wrapper">
+        <h1 class="container__title">Фото и видео</h1>
+        <p class="container__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике
+          и экономике.</p>
+      </section>
     </section>
 
     <section class="gallery">
       <div class="gallery__cardone">
         <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
         <div class="gallery__text">
-          <p class="gallery__title">Неродные просторы</p>
-          <p class="gallery__name">Автор фото: Борис</p>
-        </div>
-        <div class="gallery__want">
-          <button class="button-like" type="button"></button>
-          <p class="gallery__number">1350</p>
+          <div class="gallery__container">
+            <p class="gallery__title">Неродные просторы</p>
+            <p class="gallery__name">Автор фото: Борис</p>
+          </div>
+          <div class="gallery__want">
+            <button class="button-like" type="button"></button>
+            <p class="gallery__number">1350</p>
+          </div>
         </div>
       </div>
 
       <div class="gallery__card">
         <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
         <div class="gallery__text">
-          <p class="gallery__title">Местная растительность</p>
-          <p class="gallery__name">Автор фото: Сергей</p>
-        </div>
-        <div class="gallery__want">
-          <button class="button-like" type="button"></button>
-          <p class="gallery__number">143</p>
+          <div class="gallery__container">
+            <p class="gallery__title">Местная растительность</p>
+            <p class="gallery__name">Автор фото: Сергей</p>
+          </div>
+          <div class="gallery__want">
+            <button class="button-like" type="button"></button>
+            <p class="gallery__number">143</p>
+          </div>
         </div>
       </div>
 
       <div class="gallery__card">
         <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
-        <div class="gallery__text">
-          <p class="gallery__title">Дорога на север</p>
-          <p class="gallery__name">Автор фото: Петр</p>
-        </div>
-        <div class="gallery__want">
-          <button class="button-like" type="button"></button>
-          <p class="gallery__number">96</p>
+        <div class="gallery__text gallery__text--another">
+          <div class="gallery__container">
+            <p class="gallery__title">Дорога на север</p>
+            <p class="gallery__name">Автор фото: Петр</p>
+          </div>
+          <div class="gallery__want">
+            <button class="button-like" type="button"></button>
+            <p class="gallery__number">96</p>
+          </div>
         </div>
       </div>
 
       <div class="gallery__card">
         <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
         <div class="gallery__text">
-          <p class="gallery__title">Мост дьявола</p>
-          <p class="gallery__name">Автор фото: Антон</p>
-        </div>
-        <div class="gallery__card">
-          <button class="button-like" type="button"></button>
-          <p class="gallery__number">254</p>
+          <div class="gallery__container">
+            <p class="gallery__title">Мост дьявола</p>
+            <p class="gallery__name">Автор фото: Антон</p>
+          </div>
+          <div class="gallery__want">
+            <button class="button-like" type="button"></button>
+            <p class="gallery__number">254</p>
+          </div>
         </div>
       </div>
     </section>
 
 
     <section class="container-video">
-      <h2 class="container-video__title">Все еще сомневаетесь?</h2>
-      <p class="container-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
+      <section class="container-video__wrapper">
+        <h2 class="container-video__title">Все еще сомневаетесь?</h2>
+        <p class="container-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </section>
       <div class="container-video__clip">
         <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201" alt="Видео про Седону">
         <div class="container-video__controls">

@@ -1,7 +1,10 @@
 .impressions-fieldset {
   border: none;
-  padding: 0;
-  margin-bottom: 47px;
+  padding-right: 37px;
+  padding-left: 24px;
+  padding-bottom: 31px;
+  margin: 0;
+
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
@@ -9,7 +12,12 @@
     grid-row-start: 1;
     grid-row-end: 1;
     display: grid;
-    gap: 52px;
+    width: 324px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
   }
 }
 
@@ -27,5 +35,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    font-size: 21px;
+    padding-top: 60px;
+    text-align: end;
   }
+}
+
+.impressions-fieldset__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }

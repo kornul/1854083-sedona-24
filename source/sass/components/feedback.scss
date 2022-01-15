@@ -1,9 +1,21 @@
 .feedback {
-  margin-top: 36px;
-  margin-right: 8px;
-  margin-bottom: 37px;
-  margin-left: 8px;
+  padding-top: 40px;
+  padding-right: 23px;
+  padding-left: 23px;
+  padding-bottom: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 60px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 434px;
+    margin: 0 auto;
+  }
 }
 
 .feedback__title {
@@ -14,7 +26,12 @@
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 62px;
+  margin-bottom: 42px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .feedback__text {
@@ -24,4 +41,6 @@
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }

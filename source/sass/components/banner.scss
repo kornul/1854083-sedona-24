@@ -2,11 +2,39 @@
   margin: 0;
 }
 
-.banner__backdrop {
-  margin: 0;
+.banner__inner {
+  text-align: center;
+  background-image: url("/img/mobileform.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 158px;
+
+
+  @media (min-width: $tablet-width) {
+
+    background-image: url("/img/backdesktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 290px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/backdesktopform.jpg");
+    height: 300px;
+  }
 }
 
 .banner__text {
-  background-color: #000000;
-  color: #ffffff;
+  width: 229px;
+  padding-top: 52px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+  }
 }

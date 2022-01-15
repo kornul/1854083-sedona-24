@@ -1,10 +1,15 @@
 .radio-holder {
+  position: relative;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .radio-holder__input {
-  border: 5px solid #f2f2f2;
-  margin-right: 25px;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  margin-right: 21px;
 }
 
 .radio-holder__input-text {

@@ -1,6 +1,21 @@
 .popup-comment {
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.popup-comment__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-left: 97px;
+    padding-right: 99px;
+    padding-bottom: 50px;
+  }
 }
 
 .popup-comment__title {
@@ -12,6 +27,12 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
 }
 
 .popup-comment__text {
@@ -22,6 +43,16 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.popup-comment__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .popup-comment__close {
@@ -41,4 +72,11 @@
   margin-top: 49px;
   margin-bottom: 30px;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 44px 91px;
+    padding: 0;
+    font-size: 21px;
+  }
 }

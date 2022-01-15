@@ -1,15 +1,5 @@
 .page-content {
-  background-color: #ffffff;
-  margin: 0 auto;
-}
-
-.page-content__inner {
-  text-align: center;
-  padding-top: 62px;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 49px;
-  }
+  margin: 0;
 }
 
 .page-content__banner {
@@ -36,10 +26,16 @@
   }
 }
 
-.page-content__inner-small {
+.page-content__inner {
+  text-align: center;
+}
+
+.page-content__text {
+  padding-top: 91px;
   width: 282px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 77px;
     width: 461px;
   }
 }

@@ -4,6 +4,22 @@
   padding-bottom: 61px;
   padding-left: 23px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-right: 95px;
+    padding-bottom: 65px;
+    padding-left: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 458px;
+    padding-top: 105px;
+    padding-bottom: 85px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
 }
 
 .container__title {
@@ -15,6 +31,12 @@
   align-items: center;
   text-transform: uppercase;
   margin-bottom: 42px;
+  margin-top: 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .container__text {
@@ -25,4 +47,13 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
