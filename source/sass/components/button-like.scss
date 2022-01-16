@@ -2,8 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: url("/img/like.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 21px;
+  background-color: #ffffff;
+  border: none;
+  margin-right: 14px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 9px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/likewhite.svg");
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.button-like--color {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0);
   }
 }

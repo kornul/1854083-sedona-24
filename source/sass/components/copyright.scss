@@ -1,4 +1,6 @@
 .copyright {
+  margin-top: 40px;
+
   @media (max-width: $mobile-width-only) {
     display: flex;
     align-items: center;
@@ -8,6 +10,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    margin: 0;
   }
 }
 

@@ -1,5 +1,10 @@
 .container-video {
   margin: 0 auto;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .container-video__wrapper {
@@ -48,39 +53,118 @@
   padding: 0;
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 49px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 658px;
+    width: 648px;
     margin: 0 60px;
     padding: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 auto;
+    width: 800px;
   }
 }
 
 .container-video__img {
   @media (min-width: $tablet-width) {
-    width: 658px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .container-video__controls {
   display: flex;
   justify-content: space-between;
-  height: 66px;
-  background-color: #f2f2f2;
-  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .container-video-scale {
   height: 45px;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
+  bottom: 4px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.container-video__button-drag {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 235px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0.2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 5px;
+    left: 10px;
+    transform: translate(-50%, -50%);
+
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
 }
 
 .container-video__bottons {
   border: none;
   display: flex;
+  height: 66px;
+  position: absolute;
+  bottom: -62px;
+  width: 280px;
+  background-color: #f2f2f2;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.container-video-replay {
+  border: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.container-video-subtitles {
+  border: none;
+  margin-right: 31px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.container-video-fullscreen {
+  padding: 0;
+  border: none;
+  margin-right: 23px;
 }

@@ -1,6 +1,7 @@
 .popup-comment {
   margin: 0 auto;
   padding: 0;
+  display: none;
 
   @media (min-width: $tablet-width) {
     width: 640px;

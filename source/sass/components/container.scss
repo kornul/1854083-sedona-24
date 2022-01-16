@@ -1,15 +1,17 @@
 .container {
   padding-top: 32px;
   padding-right: 21px;
-  padding-bottom: 61px;
+  padding-bottom: 38px;
   padding-left: 23px;
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-right: 95px;
     padding-bottom: 65px;
     padding-left: 95px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

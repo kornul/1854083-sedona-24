@@ -1,8 +1,11 @@
 .social {
-  margin-bottom: 45px;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 155px;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -12,10 +15,41 @@
 .social__item {
   background-color: #81b3d2;
   list-style-type: none;
-  margin-right: 6px;
+  width: 46px;
+  height: 48px;
 }
 
 .social__link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.social__link--twitter {
+  position: absolute;
+  background-image: url("/img/twitter.svg");
+  background-repeat: no-repeat;
+  top: 17px;
+  left: 15px;
+  height: 15px;
+  width: 17px;
+}
+
+.social__link--facebook {
+  position: absolute;
+  background-image: url("/img/facebook.svg");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 19px;
+  top: 14px;
+  left: 72px;
+}
+
+.social__link--youtube {
+  position: absolute;
+  background-image: url("/img/youtube.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+  top: 17px;
+  right: 13px;
 }

@@ -1,6 +1,8 @@
 .gallery {
+  padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -13,10 +15,14 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
   }
 }
 
 .gallery__cardone {
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -28,6 +34,21 @@
   }
 }
 
+.gallery__card {
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 22px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .gallery__img {
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -35,11 +56,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
   }
 }
 
 .gallery__text {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -51,14 +74,50 @@
   }
 }
 
+.gallery__text-wrapper {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding-top: 22px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.gallery__text-inner {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    bottom: 2px;
+    left: 0;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+}
+
 .gallery__text--another {
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .gallery__container {
   align-items: end;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 21px;
+  }
 }
 
 .gallery__title {
@@ -91,9 +150,15 @@
 }
 
 .gallery__want {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 21px;
   }
 }
 
@@ -106,7 +171,8 @@
   align-items: center;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 21px;
+
 
   @media (min-width: $tablet-width) {
     margin: 0;
