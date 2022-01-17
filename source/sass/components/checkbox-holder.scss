@@ -1,11 +1,19 @@
 .checkbox-holder {
   text-align: center;
   display: flex;
+  margin-bottom: 34px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .checkbox-holder__input {
   border: 5px solid #f2f2f2;
   margin-right: 29px;
+  width: 46px;
+  height: 46px;
 }
 
 .checkbox-holder__input-text {

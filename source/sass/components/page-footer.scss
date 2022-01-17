@@ -1,13 +1,15 @@
 .page-footer {
-  margin: 0;
-  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
+    align-content: center;
+    justify-content: space-between;
     width: 768px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
+    display: flex;
+    padding: 45px 60px;
     align-items: center;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,4 +26,8 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

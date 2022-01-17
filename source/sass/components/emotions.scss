@@ -1,12 +1,14 @@
 .emotions {
   border: none;
-  padding: 0;
-  margin-bottom: 51px;
+  padding: 20px;
+  padding-bottom: 51px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
+    padding: 0;
   }
 }
 
@@ -20,16 +22,27 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    font-size: 21px;
+    margin-bottom: 54px;
+  }
 }
 
 .emotions__textarea {
-  width: 279px;
-  height: 160px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  min-height: 160px;
   background-color: #f2f2f2;
-  margin-right: 22px;
-  margin-left: 19px;
-  margin-bottom: 51px;
-  padding: 0;
+  resize: none;
+  width: 100%;
+  padding: 20px;
+  border: none;
 }
 
 .emotions__submit {
@@ -46,5 +59,11 @@
   background-color: #81b3d2;
   border: none;
   color: #ffffff;
-  margin-left: 19px;
+  margin-top: 51px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    font-size: 21px;
+  }
 }

@@ -1,14 +1,29 @@
 .user-fieldset {
   border: none;
-  margin-bottom: 46px;
-  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
-    gap: 52px;
+    width: 324px;
+    padding: 0;
+    padding-left: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    padding-left: 79px;
+  }
+}
+
+.user-fieldset__wrap {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .user-fieldset__title {
@@ -21,9 +36,13 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 19px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    font-size: 21px;
+    padding-top: 60px;
+    text-align: end;
   }
 }
 

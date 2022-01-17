@@ -12,4 +12,4 @@ var navMain = document.querySelector('.main-nav');
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
         }
-      });
+});

@@ -1,11 +1,15 @@
 .sight {
   border: none;
-  padding: 0;
-  margin-bottom: 51px;
+  padding: 24px;
+  margin: 0;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 51px;
   }
 }
 
@@ -19,16 +23,32 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 308px;
+    font-size: 21px;
+    margin-bottom: 47px;
+  }
 }
 
 .sight__container {
+  display: flex;
+  flex-direction: column;
+
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 471px;
+    gap: 32px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 69px;
+    width: 100%;
   }
 }

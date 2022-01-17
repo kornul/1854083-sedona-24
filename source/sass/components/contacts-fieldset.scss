@@ -1,12 +1,15 @@
 .contacts-fieldset {
   border: none;
-  margin-bottom: 49px;
-  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 28px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,16 +28,32 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 17px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 71px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-fieldset__wrap {
   display: grid;
+  margin-bottom: 21px;
 
   @media (min-width: $desktop-width) {
     display: flex;
     text-align: center;
     justify-content: space-between;
     align-items: center;
+    width: 400px;
+    margin: 0;
   }
 }
 
@@ -46,6 +65,16 @@
   line-height: 26px;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 8px;
-  margin-left: 42px;
+  margin-bottom: 17px;
+  margin-left: 22px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-right: 16px;
+  }
+}
+
+.contacts-fieldset__input {
+  display: flex;
+  width: 100%;
 }
