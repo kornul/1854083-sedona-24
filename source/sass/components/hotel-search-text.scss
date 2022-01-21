@@ -1,28 +1,24 @@
 .hotel-search-text {
   background-color: #ffffff;
-  padding-top: 39px;
-  padding-right: 30px;
-  padding-bottom: 49px;
-  padding-left: 29px;
+  padding-top: 33px;
+  padding-right: 20px;
+  padding-bottom: 53px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-    background-color: #ffffff;
+    padding: 58px 155px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 459px;
+    margin: 0 auto;
     padding-bottom: 66px;
   }
 }
 
 .hotel-searh-text__wrapper {
   @media (min-width: $tablet-width) {
-    width: 458px;
-    margin: 0 auto;
-    padding-top: 58px;
-    padding-bottom: 52px;
+    padding: 58px 155px;
   }
 }
 
@@ -35,13 +31,27 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 33px;
+  margin-top: 0;
 }
 
+
 .hotel-search-text__content {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 23px;
+  margin-top: 0;
+  padding-left: 7px;
+  padding-right: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .hotel-search-text__find {
@@ -59,6 +69,11 @@
   padding-top: 14px;
   padding-bottom: 17px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+  }
 }
 
 .hotel-search-text__find:hover {

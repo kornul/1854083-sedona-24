@@ -4,12 +4,14 @@
   padding-left: 20px;
   padding-bottom: 28px;
   margin: 0;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
     padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,15 +33,47 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     font-size: 21px;
     padding-top: 71px;
     margin: 0 auto;
     margin-bottom: 20px;
+    width: auto;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 85px;
+      left: -183px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 85px;
+      right: -183px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    margin-bottom: 0;
+    margin-bottom: 71px;
+
+    &::before {
+      width: 280px;
+      left: -318px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -318px;
+    }
   }
 }
 
@@ -52,7 +86,7 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: auto;
     margin: 0;
   }
 }
@@ -77,4 +111,23 @@
 .contacts-fieldset__input {
   display: flex;
   width: 100%;
+  position: relative;
+}
+
+.contacts-fieldset__icon-phone {
+  background-image: url("/img/phoneform.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+}
+
+.contacts-fieldset__icon-email {
+  background-image: url("/img/mailform.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
 }

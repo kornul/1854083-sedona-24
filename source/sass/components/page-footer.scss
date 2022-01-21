@@ -5,15 +5,11 @@
   @media (min-width: $tablet-width) {
     align-content: center;
     justify-content: space-between;
-    width: 768px;
+    width: auto;
     display: flex;
     padding: 45px 60px;
     align-items: center;
     margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 

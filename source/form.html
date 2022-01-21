@@ -13,7 +13,11 @@
   <div class="page-wrapper">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__top-logo" src="img/logotypemobile.svg" width="103" height="84" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/logotypedesktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logotypetablet.svg">
+        <img class="page-header__top-logo" src="img/logotypemobile.svg" width="102" height="84" alt="Седона">
+      </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -98,19 +102,21 @@
 
 
           <label class="contacts-fieldset__wrap text-field">
-            <span class="contacts-fieldset__field-name contacts-fieldset__field-name--phone">Контактный
+            <span class="contacts-fieldset__field-name">Контактный
               телефон*:</span>
-            <span class="contacts-fieldset__input">
+            <div class="contacts-fieldset__input">
               <input class="text-field__input" type="text" placeholder="Введите телефон" required>
-            </span>
+              <span class="contacts-fieldset__icon contacts-fieldset__icon-phone"></span>
+            </div>
           </label>
 
           <label class="contacts-fieldset__wrap text-field">
-            <span class="contacts-fieldset__field-name contacts-fieldset__field-name--email">Электронная
+            <span class="contacts-fieldset__field-name">Электронная
               почта*:</span>
-            <span class="contacts-fieldset__input contacts-fieldset__input--email-icon">
+            <div class="contacts-fieldset__input contacts-fieldset__input-email">
               <input class="text-field__input" type="email" placeholder="Введите e-mail">
-            </span>
+              <span class="contacts-fieldset__icon contacts-fieldset__icon-email"></span>
+            </div>
           </label>
         </fieldset>
 
@@ -170,12 +176,14 @@
         </fieldset>
 
         <fieldset class="emotions">
-          <legend class="emotions__title">Опишите свои эмоции:</legend>
-
-          <label class="visually-hidden" for="comment">Комментарий</label>
-          <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
-            id="comment"></textarea>
-          <input class="emotions__submit" type="submit" value="Отправить Отзыв">
+            <legend class="emotions__title">Опишите свои эмоции:</legend>
+            <label class="visually-hidden" for="comment">Комментарий</label>
+            <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
+              id="comment"></textarea>
+          <section class="emotions__wrapper">
+            <input class="emotions__submit" type="submit" value="Отправить Отзыв">
+            <p class="emotions__text">* — обязательные поля</p>
+          </section>
         </fieldset>
       </form>
     </main>
