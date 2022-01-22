@@ -4,17 +4,21 @@
   padding-left: 23px;
   padding-bottom: 21px;
   text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
     padding-bottom: 60px;
     padding-right: 0;
     padding-left: 0;
+    width: 440px;
+    margin: 0 auto;
+    border: none;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 434px;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+    padding-bottom: 56px;
   }
 }
 

@@ -4,20 +4,35 @@
   padding-left: 24px;
   padding-bottom: 31px;
   margin: 0;
+  border-bottom: 1px solid #e5e5e5;
 
 
   @media (min-width: $tablet-width) {
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
     display: grid;
-    width: 324px;
+    width: auto;
     padding: 0;
+    border: none;
   }
 
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.impressions-fieldset::before {
   @media (min-width: $tablet-width) {
-    width: 480px;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -31,13 +46,17 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
-  padding: 0;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     font-size: 21px;
     padding-top: 60px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 76px;
   }
 }
 

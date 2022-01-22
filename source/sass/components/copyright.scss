@@ -25,5 +25,18 @@
 }
 
 .copyright__logo {
+  display: block;
   margin: 0;
+}
+
+.copyright__wrapper {
+  @media (min-width: $desktop-width) {
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: rgba(0, 0, 0, 0.3);
+    }
+  }
 }

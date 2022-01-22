@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="/img/icons/iconsmall.png" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,7 +15,11 @@
   <div class="page-wrapper">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__top-logo" src="img/logotypemobile.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/logotypedesktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logotypetablet.svg">
+          <img class="page-header__top-logo" src="img/logotypemobile.svg" width="102" height="84" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -48,10 +54,10 @@
     <main class="page-content">
       <section class="page-content__banner">
         <section class="page-content__inner">
-        <img class="page-content__text" src="img/textsedona.svg" alt="Добро пожаловать в Седону" width="282"
-          height="214">
+          <img class="page-content__text" src="img/textsedona.svg" alt="Добро пожаловать в Седону" width="282"
+            height="214">
+        </section>
       </section>
-    </section>
 
       <section class="page-intro">
         <h2 class="page-intro__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -68,32 +74,42 @@
         </div>
 
         <div class="reason-city">
-          <img class="reason-city__place" src="img/photocity.jpg" alt="Город" width="320" height="260">
+          <picture>
+            <source media="(min-width:1200px)" srcset="/img/desktopphotocity@2x.jpg, img/desktopphotocity@1x.jpg">
+            <source media="(min-width:768px)" srcset="/img/tabletphotocity@2x.jpg, img/tabletphotocity@1x.jpg">
+            <source media="(min-width:320px)" srcset="/img/mobilephotocity@2x.jpg, img/mobilephotocity@1x.jpg">
+            <img class="reason-city__place" src="img/city.jpg" alt="Город" width="320" height="260">
+          </picture>
         </div>
 
         <ul class="reason__list">
-        <div class="reason__wrapper">
-          <li class="reason__item">
-            <h2 class="reason__title reason__title--house">Жилье</h2>
-            <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-        </div>
-        <div class="reason__wrapper">
-          <li class="reason__item ">
-            <h2 class="reason__title reason__title--gift">Сувениры</h2>
-            <p class="reason__text">Не только китайского, но и местного производства!</p>
-          </li>
-        </div>
-        <div class="reason__wrapper">
-          <li class="reason__item">
-            <h2 class="reason__title reason__title--food">Еда</h2>
-            <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-        </div>
+          <div class="reason__wrapper">
+            <li class="reason__item reason__item-house">
+              <h2 class="reason__title reason__title--house">Жилье</h2>
+              <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+          </div>
+          <div class="reason__wrapper reason__wrapper-inner">
+            <li class="reason__item reason__item-gift">
+              <h2 class="reason__title reason__title--gift">Сувениры</h2>
+              <p class="reason__text">Не только китайского, но и местного производства!</p>
+            </li>
+          </div>
+          <div class="reason__wrapper">
+            <li class="reason__item reason__item-food">
+              <h2 class="reason__title reason__title--food">Еда</h2>
+              <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </div>
         </ul>
 
         <div class="reason-bridge">
-          <img src="img/devilbridge.jpg" alt="Мост" width="320" height="260">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/desktopphotobridge@2x.jpg, desktopphotobridge@1x.jpg">
+            <source media="(min-width:768px)" srcset="img/tabletphotobridge@2x.jpg, tabletphotobridge@1x.jpg">
+            <source media="(min-width:320px)" srcset="img/mobilephotobridge@2x.jpg, mobilephotobridge@1x.jpg">
+            <img class="reason-bridge__place" src="img/devilbridge.jpg" alt="Мост" width="320" height="260">
+          </picture>
         </div>
 
         <div class="reason__bridge reason__bridge--blue ">
@@ -105,17 +121,17 @@
 
       <section class="reason-other">
         <div class="reason-other__more">
-          <div class="reason-other__header reason-other--gray">
+          <div class="reason-other__header reason-other__header-square">
             <h2 class="reason-other__title">Небольшая площадь</h2>
             <div class="reason-other__number">-№3-</div>
             <p class="reason-other__text">Все интересные места находятся очень близко</p>
           </div>
-          <div class="reason-other reason-other--gray">
+          <div class="reason-other reason-other-road">
             <h2 class="reason-other__title">Красивая дорога</h2>
             <div class="reason-other__number">-№4-</div>
             <p class="reason-other__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="reason-other reason-other--gray">
+          <div class="reason-other reason-other-tourist">
             <h2 class="reason-other__title">Мало туристов</h2>
             <div class="reason-other__number">-№5-</div>
             <p class="reason-other__text">Большинство едет в гранд каньон и толпится там</p>
@@ -125,7 +141,7 @@
 
       <section class="hotel-search-text">
 
-        <section class="hotel-searh-text__wrapper">
+        <section class="hotel-search-text__wrapper">
           <h2 class="hotel-search-text__header">Заинтересовались?</h2>
           <p class="hotel-search-text__content">Укажите продполагаемые даты поездки, и мы покажем вам лучшие предложения
             гостиниц в
@@ -161,7 +177,7 @@
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
+          <img class="copyright__wrapper" src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
         </a>
       </div>
 
@@ -169,4 +185,5 @@
   </div>
   <script src="js/main.js"></script>
 </body>
+
 </html>

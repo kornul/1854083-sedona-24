@@ -1,8 +1,6 @@
 .reason-other {
   margin: 0 auto;
   background-color: #eeeeee;
-  padding-top: 26px;
-  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -31,6 +29,39 @@
   }
 }
 
+.reason-other__header-square {
+  padding: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 63px;
+    padding-left: 33px;
+    padding-right: 34px;
+  }
+}
+
+.reason-other-road {
+  padding: 24px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-right: 55px;
+    padding-bottom: 41px;
+    padding-left: 53px;
+  }
+}
+
+.reason-other-tourist {
+  padding: 22px 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-right: 60px;
+    padding-left: 59px;
+    padding-bottom: 42px;
+  }
+}
+
 .reason-other__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -41,6 +72,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 23px;
+  margin-top: 0;
 }
 
 .reason-other__number {

@@ -34,6 +34,18 @@
   }
 }
 
+.gallery__inner {
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+}
+
+.gallery__wrapper--inner {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .gallery__card {
   border-bottom: 1px solid #e5e5e5;
   padding-top: 22px;
@@ -49,14 +61,17 @@
   }
 }
 
+.gallery__wrapper {
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
 .gallery__img {
   @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
