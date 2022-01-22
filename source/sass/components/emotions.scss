@@ -37,7 +37,7 @@
       height: 1px;
       background-color: #dbdbdb;
       top: 85px;
-      left: -199px;
+      transform: translateX(-160%);
     }
 
     &::after {
@@ -47,19 +47,19 @@
       height: 1px;
       background-color: #dbdbdb;
       top: 85px;
-      right: -199px;
+      transform: translateX(50%);
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       width: 280px;
-      left: -349px;
+      transform: translateX(-125%);
     }
 
     &::after {
       width: 280px;
-      right: -349px;
+      transform: translateX(25%);
     }
   }
 }
@@ -112,6 +112,19 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 }
 

@@ -69,12 +69,14 @@
 
     <section class="gallery">
       <div class="gallery__cardone">
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/roadphotodesktop@2x.jpg, img/roadphotodesktop@1x.jpg">
-          <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg, img/roadphototablet@1x.jpg">
-          <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg, img/roadphotomobile@1x.jpg">
-          <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
-        </picture>
+        <div class="gallery__inner">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/roadphotodesktop@2x.jpg, img/roadphotodesktop@1x.jpg">
+            <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg, img/roadphototablet@1x.jpg">
+            <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg, img/roadphotomobile@1x.jpg">
+            <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
+          </picture>
+      </div>
         <div class="gallery__text gallery__text-wrapper">
           <div class="gallery__container">
             <p class="gallery__title">Неродные просторы</p>
@@ -88,12 +90,14 @@
       </div>
 
       <div class="gallery__card">
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/photodesktopplants@2x.jpg, img/photodesktopplants@1x.jpg">
-          <source media="(min-width:768px)" srcset="img/phototabletplants@2x.jpg, img/phototabletplants@1x.jpg">
-          <source media="(min-width:320px)" srcset="img/photomobileplants@2x.jpg, img/photomobileplants@1x.jpg">
-          <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
-        </picture>
+        <div class="gallery__wrapper">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photodesktopplants@2x.jpg, img/photodesktopplants@1x.jpg">
+            <source media="(min-width:768px)" srcset="img/phototabletplants@2x.jpg, img/phototabletplants@1x.jpg">
+            <source media="(min-width:320px)" srcset="img/photomobileplants@2x.jpg, img/photomobileplants@1x.jpg">
+            <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
+          </picture>
+        </div>
         <div class="gallery__text gallery__text-inner">
           <div class="gallery__container">
             <p class="gallery__title">Местная растительность</p>
@@ -107,12 +111,15 @@
       </div>
 
       <div class="gallery__card">
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/northroadphotodesktop@2x.jpg, img/northroadphotodesktop@1x.jpg">
-          <source media="(min-width:768px)" srcset="img/northroadphototablet@2x.jpg, img/northroadphototablet@1x.jpg">
-          <source media="(min-width:320px)" srcset="img/northroadphotomobile@2x.jpg, img/northroadphotomobile@1x.jpg">
-          <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
-        </picture>
+        <div class="gallery__wrapper">
+          <picture>
+            <source media="(min-width:1200px)"
+              srcset="img/northroadphotodesktop@2x.jpg, img/northroadphotodesktop@1x.jpg">
+            <source media="(min-width:768px)" srcset="img/northroadphototablet@2x.jpg, img/northroadphototablet@1x.jpg">
+            <source media="(min-width:320px)" srcset="img/northroadphotomobile@2x.jpg, img/northroadphotomobile@1x.jpg">
+            <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
+          </picture>
+        </div>
         <div class="gallery__text gallery__text-inner gallery__text--another">
           <div class="gallery__container">
             <p class="gallery__title">Дорога на север</p>
@@ -126,12 +133,14 @@
       </div>
 
       <div class="gallery__card">
+        <div class="gallery__wrapper">
         <picture>
           <source media="(min-width:1200px)" srcset="img/desktopphotobridge@2x.jpg, img/desktopphotobridge@1x.jpg">
           <source media="(min-width:768px)" srcset="img/tabletphotobridge@2x.jpg, img/tabletphotobridge@1x.jpg">
           <source media="(min-width:320px)" srcset="img/mobilephotobridge@2x.jpg, img/mobilephotobridge@1x.jpg">
-        <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
+          <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
         </picture>
+        </div>
         <div class="gallery__text gallery__text-inner">
           <div class="gallery__container">
             <p class="gallery__title">Мост дьявола</p>
@@ -158,7 +167,7 @@
           <source media="(min-width:1200px)" srcset="img/videodesktop@2x.jpg, img/videodesktop@1x.jpg">
           <source media="(min-width:768px)" srcset="img/videotablet@2x.jpg, img/videotablet@1x.jpg">
           <source media="(min-width:320px)" srcset="img/videomobile@2x.jpg, img/videomobile@1x.jpg">
-        <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201" alt="Видео про Седону">
+          <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201" alt="Видео про Седону">
         </picture>
         <div class="container-video__controls">
           <div class="container-video-scale">
@@ -205,11 +214,12 @@
     <div class="copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
+        <img class="copyright__wrapper" src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
       </a>
     </div>
 
   </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>

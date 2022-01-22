@@ -16,5 +16,12 @@
   position: absolute;
   left: 50%;
   z-index: 2;
-  margin-left: -51px;
+  transform: translateX(-50%);
+}
+
+.page-header__top-logo {
+  @media (min-width: $desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
 }

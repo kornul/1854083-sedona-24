@@ -47,7 +47,7 @@
       height: 1px;
       background-color: #dbdbdb;
       top: 85px;
-      left: -183px;
+      transform: translateX(-150%);
     }
 
     &::after {
@@ -57,7 +57,7 @@
       height: 1px;
       background-color: #dbdbdb;
       top: 85px;
-      right: -183px;
+      transform: translateX(50%);
     }
   }
 
@@ -67,12 +67,12 @@
 
     &::before {
       width: 280px;
-      left: -318px;
+      transform: translateX(-120%);
     }
 
     &::after {
       width: 280px;
-      right: -318px;
+      transform: translateX(20%);
     }
   }
 }

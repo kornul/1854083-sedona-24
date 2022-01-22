@@ -41,7 +41,7 @@
       height: 1px;
       background-color: #dbdbdb;
       top: 73px;
-      left: -169px;
+      transform: translateX(-208%);
     }
   }
 
@@ -52,20 +52,18 @@
     height: 1px;
     background-color: #dbdbdb;
     top: 73px;
-    right: -169px;
+    transform: translateX(50%);
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       width: 280px;
-      top: 73px;
-      left: -318px;
+      transform: translateX(-144%);
     }
 
     &::after {
       width: 280px;
-      top: 73px;
-      right: -318px;
+      transform: translateX(20%);
     }
   }
 }

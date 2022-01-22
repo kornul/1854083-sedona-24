@@ -11,6 +11,10 @@
     align-items: center;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-footer__caption {
