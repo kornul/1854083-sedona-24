@@ -9,7 +9,20 @@
 }
 
 .reason__city--blue {
-  margin: 0;
+  position: relative;
+}
+
+.reason__city--blue::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/whitetriangle.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    left: 0;
+  }
 }
 
 

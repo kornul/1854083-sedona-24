@@ -43,16 +43,16 @@
       top: 73px;
       transform: translateX(-208%);
     }
-  }
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 123px;
-    height: 1px;
-    background-color: #dbdbdb;
-    top: 73px;
-    transform: translateX(50%);
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 73px;
+      transform: translateX(52%);
+    }
   }
 
   @media (min-width: $desktop-width) {

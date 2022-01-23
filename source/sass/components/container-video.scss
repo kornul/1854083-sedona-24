@@ -1,6 +1,7 @@
 .container-video {
   margin: 0 auto;
   padding-bottom: 49px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
@@ -43,6 +44,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 33px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -59,6 +61,7 @@
     width: 648px;
     margin: 0 60px;
     padding: 0;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,43 +92,54 @@
   bottom: 4px;
   width: 280px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 235px;
+    height: 3px;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
-    left: 0;
-    width: 100%;
+    width: auto;
+    background-color: transparent;
+
+    &::before {
+      width: 389px;
+      top: -4px;
+      left: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 540px;
+    }
   }
 }
 
 .container-video__button-drag {
-  position: relative;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 235px;
-    height: 3px;
-    background-color: #ffffff;
-    opacity: 0.2;
+  @media (min-width: $tablet-width) {
+    top: -9px;
+    left: 180px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-
-    top: 5px;
-    left: 10px;
-    transform: translate(-50%, -50%);
-
-    width: 9px;
-    height: 9px;
-    background-color: #ffffff;
-    border-radius: 50%;
+  @media (min-width: $desktop-width) {
+    left: 190px;
   }
 }
+
 
 .container-video__bottons {
   border: none;
@@ -138,8 +152,13 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 100%;
     left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.6;
+    bottom: 4px;
+    height: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,6 +171,11 @@
   border: none;
   padding: 0;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    margin-left: 35px;
+  }
 }
 
 .container-video-subtitles {
@@ -159,10 +183,19 @@
   margin-right: 31px;
   margin-left: auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .container-video-fullscreen {
   padding: 0;
   border: none;
   margin-right: 23px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    margin-right: 41px;
+  }
 }

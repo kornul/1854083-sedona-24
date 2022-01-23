@@ -5,6 +5,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .reason__city {

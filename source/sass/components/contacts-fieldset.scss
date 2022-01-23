@@ -86,7 +86,6 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    width: auto;
     margin: 0;
   }
 }
@@ -110,7 +109,7 @@
 
 .contacts-fieldset__input {
   display: flex;
-  width: 100%;
+  width: auto;
   position: relative;
 }
 
@@ -119,8 +118,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e6e6e6;
-  width: 58px;
-  height: 58px;
+  min-width: 58px;
 }
 
 .contacts-fieldset__icon-email {
@@ -128,6 +126,5 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e6e6e6;
-  width: 58px;
-  height: 58px;
+  min-width: 58px;
 }

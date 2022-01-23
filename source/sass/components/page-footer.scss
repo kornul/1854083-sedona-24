@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 28px;
+  padding-top: 77px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: auto;
+    padding-right: 144px;
+    padding-left: 144px;
   }
 }
 

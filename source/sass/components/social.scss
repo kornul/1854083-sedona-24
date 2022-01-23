@@ -17,6 +17,14 @@
   list-style-type: none;
   width: 46px;
   height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {

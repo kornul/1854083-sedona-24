@@ -80,29 +80,28 @@
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Имя*:</span>
-            <input class="text-field__input" type="text" name="name" required>
+            <input class="user-fieldset__input" type="text" name="name" required>
           </label>
 
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Фамилия*:</span>
-            <input class="text-field__input" type="text" name="surname" required>
+            <input class="user-fieldset__input" type="text" name="surname" required>
           </label>
 
 
           <label class="user-fieldset__wrap text-field">
             <span class="user-fieldset__field-name">Отсчество*:</span>
-            <input class="text-field__input" type="text" name="patronymic">
+            <input class="user-fieldset__input" type="text" name="patronymic">
           </label>
         </fieldset>
 
 
         <fieldset class="contacts-fieldset">
           <legend class="contacts-fieldset__title">Контактная информация:</legend>
-
-
           <label class="contacts-fieldset__wrap text-field">
-            <span class="contacts-fieldset__field-name contacts-fieldset__field-name__hidden">Контактный
+            <span class="contacts-fieldset__field-name contacts-fieldset__field-name__hidden"><span
+                class="desktop-hidden">Контактный</span>
               телефон*:</span>
             <div class="contacts-fieldset__input">
               <input class="text-field__input" type="text" placeholder="Введите телефон" required>
@@ -126,27 +125,30 @@
           <legend class="impressions-fieldset__title">Ваше общее впечатление:</legend>
 
 
-          <section class="impressions-fieldset__container">
+          <div class="impressions-fieldset__container">
             <label class="radio-holder">
-              <input class="radio-holder__input" type="radio" name="impressions" checked>
-              <span class="radio-holder__input-indicator radio-holder__input-indicator--circle"> </span>
+
+              <input class="radio-holder__input visually-hidden" type="radio" name="impressions" checked>
+              <span class="radio-holder__input-indicator radio-holder__input-indicator--circle"></span>
               <span class="radio-holder__input-text">Скорее положительное</span>
             </label>
-          </section>
+          </div>
 
-          <section class="impressions-fieldset__container">
+          <div class="impressions-fieldset__container">
             <label class="radio-holder">
-              <input class="radio-holder__input" type="radio" name="impressions">
+              <input class="radio-holder__input visually-hidden" type="radio" name="impressions">
+              <span class="radio-holder__input-indicator radio-holder__input-indicator--circle"></span>
               <span class="radio-holder__input-text">Скорее отрицательное</span>
             </label>
-          </section>
+          </div>
 
-          <section class="impressions-fieldset__container">
+          <div class="impressions-fieldset__container">
             <label class="radio-holder">
-              <input class="radio-holder__input" type="radio" name="impressions">
+              <input class="radio-holder__input visually-hidden" type="radio" name="impressions">
+              <span class="radio-holder__input-indicator radio-holder__input-indicator--circle"></span>
               <span class="radio-holder__input-text">Затрудняюсь ответить</span>
             </label>
-          </section>
+          </div>
         </fieldset>
 
         <fieldset class="sight">
@@ -178,10 +180,10 @@
         <fieldset class="emotions">
           <legend class="emotions__title">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="comment">Комментарий</label>
-          <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
-            id="comment"></textarea>
+            <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
+              id="comment"></textarea>
           <section class="emotions__wrapper">
-            <input class="emotions__submit" type="submit" value="Отправить Отзыв">
+            <button class="emotions__submit" type="submit">Отправить Отзыв</button>
             <p class="emotions__text">* — обязательные поля</p>
           </section>
         </fieldset>
@@ -207,12 +209,14 @@
 
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__wrapper" src="img/htmlacademyfooter.svg" alt="htmlacademy" width="27" height="34">
+        <a class="copyright__logo" href="#">
+          <svg class="copyright__wrapper" width="27" height="34">
+            <use href="img/sprite.svg#htmlacademyfooter"></use>
+          </svg>
         </a>
       </div>
+    </footer>
   </div>
-  </footer>
 
   <section class="popup-error">
     <div class="popup-error__container">
@@ -233,6 +237,7 @@
     </div>
   </section>
   <script src="js/main.js"></script>
-</body>
 
+
+</body>
 </html>

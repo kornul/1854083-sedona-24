@@ -27,8 +27,39 @@
 }
 
 .column__banner-inner {
+  position: relative;
   text-align: center;
 }
+
+.column__banner-inner::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/trianglemobile.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57px;
+  top: 108%;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/triangletablet.svg");
+    background-repeat: no-repeat;
+    top: 132%;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/introtriangle.svg");
+    background-repeat: no-repeat;
+    top: 133%;
+    left: 0;
+  }
+}
+
 
 .column__banner-text {
   padding-top: 51px;

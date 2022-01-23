@@ -10,9 +10,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 459px;
+    width: 1200px;
     margin: 0 auto;
     padding-bottom: 66px;
+    padding-top: 58px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -70,14 +73,16 @@
   padding-bottom: 17px;
   display: block;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;
-  }
-}
-
-.hotel-search-text__find:hover {
-  @media (min-width: $tablet-width) {
-    background-color: #669ec0;
   }
 }
