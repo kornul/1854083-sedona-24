@@ -1,23 +1,16 @@
 .page-content {
   margin: 0;
   width: auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 .page-content__banner {
+  position: relative;
   background-color: #ffffff;
   background-image: url("/img/backmobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: auto;
   height: 390px;
 
   @media (min-width: $tablet-width) {
@@ -26,7 +19,6 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 517px;
-    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,7 +26,6 @@
     background-image: url("/img/backdesktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 1200px;
     margin: 0 auto;
   }
 }
@@ -44,33 +35,24 @@
   text-align: center;
 }
 
-.page-content__inner::after {
+.page-content__banner::after {
   content: "";
   position: absolute;
   background-image: url("/img/trianglemobile.svg");
   background-repeat: no-repeat;
   width: 100%;
   height: 57px;
-  top: 108%;
+  bottom: -1px;
   left: 0;
+  background-size: cover;
 
 
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
     background-image: url("/img/triangletablet.svg");
-    background-repeat: no-repeat;
-    top: 107%;
-    left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
     background-image: url("/img/introtriangle.svg");
-    background-repeat: no-repeat;
-    top: 107%;
-    left: 0;
   }
 }
 

@@ -31,7 +31,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link--current" href="#">
                 Фото и Видео
               </a>
             </li>
@@ -50,178 +50,204 @@
       </nav>
     </header>
 
-  <main class="column">
-    <section class="column__banner">
-      <section class="column__banner-inner">
-        <img class="column__banner-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
+    <main class="column">
+      <section class="column__banner">
+        <section class="column__banner-inner">
+          <img class="column__banner-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
+        </section>
       </section>
-    </section>
 
-    <section class="container">
-      <section class="container__wrapper">
-        <h1 class="container__title">Фото и видео</h1>
-        <p class="container__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике
-          и экономике.</p>
+      <section class="container">
+        <section class="container__wrapper">
+          <h1 class="container__title">Фото и видео</h1>
+          <p class="container__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике
+            и экономике.</p>
+        </section>
       </section>
-    </section>
 
-    <section class="gallery">
-      <div class="gallery__cardone">
-        <div class="gallery__inner">
-          <picture>
-            <source type="image/webp" media="(min-width:1200px)" srcset="img/newdesktop@2x.webp 2x, img/newdesktop@1x.webp 1x">
-            <source type="image/webp" media="(min-width:768px)" srcset="img/newtablet@2x.webp 2x, img/newtablet@1x.webp 1x">
-            <source type="image/webp" media="(min-width:320px)" srcset="img/newmobile@2x.webp 2x, img/newmobile@1x.webp 1x">
-            <source media="(min-width:1200px)" srcset="img/roadphotodesktop@2x.jpg, img/roadphotodesktop@1x.jpg">
-            <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg, img/roadphototablet@1x.jpg">
-            <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg, img/roadphotomobile@1x.jpg">
-            <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
-          </picture>
-        </div>
-        <div class="gallery__text gallery__text-wrapper">
-          <div class="gallery__container">
-            <p class="gallery__title">Неродные просторы</p>
-            <p class="gallery__name">Автор фото: Борис</p>
+      <section class="gallery">
+        <div class="gallery__cardone">
+          <div class="gallery__inner">
+            <picture>
+              <source type="image/webp" media="(min-width:1200px)"
+                srcset="img/newdesktop@2x.webp 2x, img/newdesktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/newtablet@2x.webp 2x, img/newtablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)"
+                srcset="img/newmobile@2x.webp 2x, img/newmobile@1x.webp 1x">
+              <source media="(min-width:1200px)" srcset="img/roadphotodesktop@2x.jpg, img/roadphotodesktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg, img/roadphototablet@1x.jpg">
+              <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg, img/roadphotomobile@1x.jpg">
+              <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
+            </picture>
           </div>
-          <div class="gallery__want">
-            <button class="button-like" type="button"></button>
-            <p class="gallery__number">1350</p>
+          <div class="gallery__text gallery__text-wrapper">
+            <div class="gallery__container">
+              <p class="gallery__title">Неродные просторы</p>
+              <p class="gallery__name">Автор фото: Борис</p>
+            </div>
+            <div class="gallery__want">
+              <button class="button-like" type="button"></button>
+              <p class="gallery__number">1350</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="gallery__card">
-        <div class="gallery__wrapper">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/photodesktopplants@2x.jpg, img/photodesktopplants@1x.jpg">
-            <source media="(min-width:768px)" srcset="img/phototabletplants@2x.jpg, img/phototabletplants@1x.jpg">
-            <source media="(min-width:320px)" srcset="img/photomobileplants@2x.jpg, img/photomobileplants@1x.jpg">
-            <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
-          </picture>
-        </div>
-        <div class="gallery__text gallery__text-inner">
-          <div class="gallery__container">
-            <p class="gallery__title">Местная растительность</p>
-            <p class="gallery__name">Автор фото: Сергей</p>
+        <div class="gallery__card">
+          <div class="gallery__wrapper">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photodesktopplants@2x.jpg, img/photodesktopplants@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/phototabletplants@2x.jpg, img/phototabletplants@1x.jpg">
+              <source media="(min-width:320px)" srcset="img/photomobileplants@2x.jpg, img/photomobileplants@1x.jpg">
+              <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
+            </picture>
           </div>
-          <div class="gallery__want">
-            <button class="button-like" type="button"></button>
-            <p class="gallery__number">143</p>
+          <div class="gallery__text gallery__text-inner">
+            <div class="gallery__container">
+              <p class="gallery__title">Местная растительность</p>
+              <p class="gallery__name">Автор фото: Сергей</p>
+            </div>
+            <div class="gallery__want">
+              <button class="button-like" type="button"></button>
+              <p class="gallery__number">143</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="gallery__card">
-        <div class="gallery__wrapper">
-          <picture>
-            <source media="(min-width:1200px)"
-              srcset="img/northroadphotodesktop@2x.jpg, img/northroadphotodesktop@1x.jpg">
-            <source media="(min-width:768px)" srcset="img/northroadphototablet@2x.jpg, img/northroadphototablet@1x.jpg">
-            <source media="(min-width:320px)" srcset="img/northroadphotomobile@2x.jpg, img/northroadphotomobile@1x.jpg">
-            <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
-          </picture>
-        </div>
-        <div class="gallery__text gallery__text-inner gallery__text--another">
-          <div class="gallery__container">
-            <p class="gallery__title">Дорога на север</p>
-            <p class="gallery__name">Автор фото: Петр</p>
+        <div class="gallery__card">
+          <div class="gallery__wrapper">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="img/northroadphotodesktop@2x.jpg, img/northroadphotodesktop@1x.jpg">
+              <source media="(min-width:768px)"
+                srcset="img/northroadphototablet@2x.jpg, img/northroadphototablet@1x.jpg">
+              <source media="(min-width:320px)"
+                srcset="img/northroadphotomobile@2x.jpg, img/northroadphotomobile@1x.jpg">
+              <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
+            </picture>
           </div>
-          <div class="gallery__want">
-            <button class="button-like button-like--color" type="button"></button>
-            <p class="gallery__number">96</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery__card">
-        <div class="gallery__wrapper">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/desktopphotobridge@2x.jpg, img/desktopphotobridge@1x.jpg">
-            <source media="(min-width:768px)" srcset="img/tabletphotobridge@2x.jpg, img/tabletphotobridge@1x.jpg">
-            <source media="(min-width:320px)" srcset="img/mobilephotobridge@2x.jpg, img/mobilephotobridge@1x.jpg">
-            <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
-          </picture>
-        </div>
-        <div class="gallery__text gallery__text-inner">
-          <div class="gallery__container">
-            <p class="gallery__title">Мост дьявола</p>
-            <p class="gallery__name">Автор фото: Антон</p>
-          </div>
-          <div class="gallery__want">
-            <button class="button-like" type="button"></button>
-            <p class="gallery__number">254</p>
+          <div class="gallery__text gallery__text-inner gallery__text--another">
+            <div class="gallery__container">
+              <p class="gallery__title">Дорога на север</p>
+              <p class="gallery__name">Автор фото: Петр</p>
+            </div>
+            <div class="gallery__want">
+              <button class="button-like button-like--color" type="button"></button>
+              <p class="gallery__number">96</p>
+            </div>
           </div>
         </div>
-      </div>
 
-    </section>
+        <div class="gallery__card">
+          <div class="gallery__wrapper">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/desktopphotobridge@2x.jpg, img/desktopphotobridge@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/tabletphotobridge@2x.jpg, img/tabletphotobridge@1x.jpg">
+              <source media="(min-width:320px)" srcset="img/mobilephotobridge@2x.jpg, img/mobilephotobridge@1x.jpg">
+              <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
+            </picture>
+          </div>
+          <div class="gallery__text gallery__text-inner">
+            <div class="gallery__container">
+              <p class="gallery__title">Мост дьявола</p>
+              <p class="gallery__name">Автор фото: Антон</p>
+            </div>
+            <div class="gallery__want">
+              <button class="button-like" type="button"></button>
+              <p class="gallery__number">254</p>
+            </div>
+          </div>
+        </div>
 
-
-    <section class="container-video">
-      <section class="container-video__wrapper">
-        <h2 class="container-video__title">Все еще сомневаетесь?</h2>
-        <p class="container-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-          очередной раз!</p>
       </section>
-      <div class="container-video__clip">
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/videodesktop@2x.jpg, img/videodesktop@1x.jpg">
-          <source media="(min-width:768px)" srcset="img/videotablet@2x.jpg, img/videotablet@1x.jpg">
-          <source media="(min-width:320px)" srcset="img/videomobile@2x.jpg, img/videomobile@1x.jpg">
-          <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201" alt="Видео про Седону">
-        </picture>
-        <div class="container-video__controls">
-          <div class="container-video-scale">
-            <button class="container-video__button-drag"  type="button">
-              <span class="visually-hidden">Изменить громкость</span>
-            </button>
-          </div>
-          <div class="container-video__bottons">
-            <button class="container-video-replay" type="button">
-              <img class="container-video__icon-replay" src="img/replay.svg" width="16" height="20" alt="Повтор видео">
-            </button>
-            <button class="container-video-subtitles" type="button">
-              <img class="container-video__icon-subtitles" src="img/subtitles.svg" width="32" height="20"
-                alt="Субтитры">
-            </button>
-            <button class="container-video-fullscreen" type="button">
-              <img class="container-video__icon-fullscreen" src="img/fullscreen.svg" width="20" height="20"
-                alt="Полноэкранный режим">
-            </button>
+
+
+      <section class="container-video">
+        <section class="container-video__wrapper">
+          <h2 class="container-video__title">Все еще сомневаетесь?</h2>
+          <p class="container-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </section>
+        <div class="container-video__clip">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/videodesktop@2x.jpg, img/videodesktop@1x.jpg">
+            <source media="(min-width:768px)" srcset="img/videotablet@2x.jpg, img/videotablet@1x.jpg">
+            <source media="(min-width:320px)" srcset="img/videomobile@2x.jpg, img/videomobile@1x.jpg">
+            <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201"
+              alt="Видео про Седону">
+          </picture>
+          <div class="container-video__controls">
+            <div class="container-video__scale">
+              <button class="container-video__button-drag" type="button">
+                <span class="visually-hidden">Изменить громкость</span>
+              </button>
+            </div>
+            <div class="container-video__bottons">
+              <button class="container-video__replay" type="button">
+                <svg class="container-video__icon-replay"  width="16" height="20">
+                  <use href="img/sprite.svg#replay"></use>
+                </svg>
+              </button>
+              <button class="container-video__subtitles" type="button">
+                <svg class="container-video__icon-subtitles" width="32" height="20">
+                  <use href="img/sprite.svg#subtitles"></use>
+                </svg>
+              </button>
+              <button class="container-video__fullscreen" type="button">
+                <svg class="container-video__icon-fullscreen" width="20" height="20">
+                  <use href="img/sprite.svg#fullscreen"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__caption">#visitsedona</div>
+
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__symbol-twitter" width="18" height="15">
+                <use href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__symbol-facebook" width="9" height="19">
+                <use href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__symbol-youtube" width="20" height="14">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
+        <div class="copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__logo" href="#">
+            <svg class="copyright__wrapper" width="27" height="34">
+              <use href="img/sprite.svg#htmlacademyfooter"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__caption">#visitsedona</div>
-
-
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="#"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#"></a>
-      </li>
-    </ul>
-
-
-    <div class="copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__logo" href="#">
-        <svg class="copyright__wrapper" width="27" height="34">
-          <use href="img/sprite.svg#htmlacademyfooter"></use>
-        </svg>
-      </a>
-    </div>
-  </footer>
+    </footer>
   </div>
   <script src="js/main.js"></script>
 </body>

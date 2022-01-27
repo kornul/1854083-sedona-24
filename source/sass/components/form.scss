@@ -3,20 +3,20 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    width: auto;
   }
 
   @media (min-width: $tablet-width) {
+    width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
     padding-right: 60px;
     padding-left: 60px;
-    max-width: 768px;
     padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
     padding-left: 128px;
     padding-right: 120px;
   }

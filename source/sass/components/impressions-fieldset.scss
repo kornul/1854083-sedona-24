@@ -1,5 +1,6 @@
 .impressions-fieldset {
   border: none;
+  padding-top: 20px;
   padding-right: 37px;
   padding-left: 24px;
   padding-bottom: 31px;
@@ -31,9 +32,13 @@
     width: 1px;
     height: 292px;
     background-color: #dbdbdb;
-    bottom: 0;
+    top: 0;
     right: 0;
   }
+}
+
+.impressions-fieldset__wrapper {
+  margin: 0;
 }
 
 .impressions-fieldset__title {
@@ -46,13 +51,12 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
-  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     font-size: 21px;
-    padding-top: 60px;
-    text-align: end;
+    text-align: start;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +65,15 @@
 }
 
 .impressions-fieldset__container {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+.impressions-fieldset__container:last-child {
+  margin: 0;
 }

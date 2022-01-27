@@ -2,14 +2,7 @@
   background-color: #ffffff;
   position: relative;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
+  width: auto;
 }
 
 .page-header__logo {

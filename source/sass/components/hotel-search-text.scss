@@ -4,24 +4,19 @@
   padding-right: 20px;
   padding-bottom: 53px;
   padding-left: 20px;
+  width: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 155px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 458px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
     padding-bottom: 66px;
-    padding-top: 58px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.hotel-searh-text__wrapper {
-  @media (min-width: $tablet-width) {
-    padding: 58px 155px;
   }
 }
 
@@ -52,8 +47,14 @@
   padding-left: 7px;
   padding-right: 7px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: inline;
+    }
   }
 }
 
