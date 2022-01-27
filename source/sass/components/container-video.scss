@@ -1,18 +1,29 @@
 .container-video {
   margin: 0 auto;
   padding-bottom: 49px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 85px;
   }
 }
 
 .container-video__wrapper {
   @media (min-width: $tablet-width) {
     padding-top: 59px;
-    padding-bottom: 68px;
+    padding-bottom: 85px;
     width: 445px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
   }
 }
 
@@ -43,6 +54,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 33px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -59,6 +71,7 @@
     width: 648px;
     margin: 0 60px;
     padding: 0;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,50 +95,63 @@
   margin-left: 20px;
 }
 
-.container-video-scale {
+.container-video__scale {
   height: 45px;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 4px;
   width: 280px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 235px;
+    height: 3px;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
-    left: 0;
-    width: 100%;
+    width: auto;
+    background-color: transparent;
+
+    &::before {
+      width: 389px;
+      top: -4px;
+      left: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 540px;
+    }
   }
 }
 
 .container-video__button-drag {
-  position: relative;
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  color: #ffffff;
+  border-radius: 50%;
+  border: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 235px;
-    height: 3px;
-    background-color: #ffffff;
-    opacity: 0.2;
+  @media (min-width: $tablet-width) {
+    top: -9px;
+    left: 180px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-
-    top: 5px;
-    left: 10px;
-    transform: translate(-50%, -50%);
-
-    width: 9px;
-    height: 9px;
-    background-color: #ffffff;
-    border-radius: 50%;
+  @media (min-width: $desktop-width) {
+    left: 190px;
   }
 }
+
 
 .container-video__bottons {
   border: none;
@@ -138,8 +164,13 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 100%;
     left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.6;
+    bottom: 4px;
+    height: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,21 +179,88 @@
   }
 }
 
-.container-video-replay {
+.container-video__replay {
   border: none;
   padding: 0;
   margin-left: 20px;
+  fill: #5c6870;
+
+  &:hover {
+    fill: rgba(51, 51, 51, 1);
+
+    &:active {
+      fill: rgba(51, 51, 51, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    margin-left: 35px;
+    fill: #ffffff;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+
+      &:active {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }
 
-.container-video-subtitles {
+.container-video__subtitles {
   border: none;
   margin-right: 31px;
   margin-left: auto;
   padding: 0;
+  fill: #5c6870;
+
+  &:hover {
+    fill: rgba(51, 51, 51, 1);
+
+    &:active {
+      fill: rgba(51, 51, 51, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    fill: #ffffff;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+
+      &:active {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }
 
-.container-video-fullscreen {
+.container-video__fullscreen {
   padding: 0;
   border: none;
   margin-right: 23px;
+  fill: #5c6870;
+
+  &:hover {
+    fill: rgba(51, 51, 51, 1);
+
+    &:active {
+      fill: rgba(51, 51, 51, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    fill: #ffffff;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+
+      &:active {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 }

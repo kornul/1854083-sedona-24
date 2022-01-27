@@ -1,4 +1,5 @@
 .checkbox-holder {
+  position: relative;
   text-align: center;
   display: flex;
   margin-bottom: 34px;
@@ -13,11 +14,47 @@
   }
 }
 
-.checkbox-holder__input {
-  border: 5px solid #f2f2f2;
-  margin-right: 29px;
+.checkbox-holder__input-indicator {
+  position: relative;
   width: 46px;
   height: 46px;
+  margin-right: 29px;
+  background-color: #f2f2f2;
+  border: 5px solid #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 5px solid #e5e5e5;
+  }
+}
+
+.checkbox-holder__input-indicator--square {
+  position: relative;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 5px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border: 5px solid #d5d5d5;
+  }
+}
+
+.checkbox-holder__input:checked + .checkbox-holder__input-indicator--square::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  top: 30%;
+  left: 25%;
+  background: url("/img/chek.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox-holder__input:checked + .checkbox-holder__input-indicator--square:active::before {
+  opacity: 0.3;
 }
 
 .checkbox-holder__input-text {

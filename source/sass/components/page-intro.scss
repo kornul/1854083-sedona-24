@@ -8,7 +8,10 @@
   @media (min-width: $tablet-width) {
     width: 484px;
     margin: 0 auto;
-    padding: 43px 0 52px;
+    padding-top: 43px;
+    padding-right: 0;
+    padding-bottom: 52px;
+    padding-left: 0;
   }
 }
 

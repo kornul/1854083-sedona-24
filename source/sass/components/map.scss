@@ -1,11 +1,12 @@
 .map {
   margin: 0;
+  width: auto;
 }
 
 .map iframe {
   border: none;
   display: block;
-  width: auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 100%;

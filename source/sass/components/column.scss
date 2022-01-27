@@ -1,15 +1,19 @@
 .column {
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .column__banner {
+  position: relative;
   background-image: url("/img/mobileform.jpg");
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 158px;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
 
@@ -26,9 +30,31 @@
   }
 }
 
+.column__banner::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/trianglemobile.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 57px;
+  bottom: -1px;
+  left: 0;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/triangletablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/introtriangle.svg");
+  }
+}
+
 .column__banner-inner {
+  position: relative;
   text-align: center;
 }
+
 
 .column__banner-text {
   padding-top: 51px;

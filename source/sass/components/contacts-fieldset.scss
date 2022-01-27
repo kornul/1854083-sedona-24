@@ -1,5 +1,6 @@
 .contacts-fieldset {
   border: none;
+  padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 28px;
@@ -10,13 +11,26 @@
     grid-column-start: 1;
     grid-column-end: 3;
     display: grid;
-    padding: 0;
+    padding-top: 72px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.contacts-fieldset__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -30,12 +44,11 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 17px;
-  padding-top: 26px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     position: relative;
     font-size: 21px;
-    padding-top: 71px;
     margin: 0 auto;
     margin-bottom: 20px;
     width: auto;
@@ -46,8 +59,8 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      top: 85px;
-      transform: translateX(-150%);
+      top: 50%;
+      left: 0;
     }
 
     &::after {
@@ -56,28 +69,33 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      top: 85px;
-      transform: translateX(50%);
+      top: 50%;
+      right: 0;
     }
   }
 
+
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
     margin-bottom: 71px;
 
     &::before {
       width: 280px;
-      transform: translateX(-120%);
     }
 
     &::after {
       width: 280px;
-      transform: translateX(20%);
     }
   }
 }
 
-.contacts-fieldset__wrap {
+.contacts-fieldset__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts-fieldset__container {
   display: grid;
   margin-bottom: 21px;
 
@@ -86,11 +104,13 @@
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    width: auto;
     margin: 0;
   }
 }
 
+.contacts-fieldset__container:last-child {
+  margin: 0;
+}
 
 .contacts-fieldset__field-name {
   font-style: normal;
@@ -110,7 +130,7 @@
 
 .contacts-fieldset__input {
   display: flex;
-  width: 100%;
+  width: auto;
   position: relative;
 }
 
@@ -119,8 +139,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e6e6e6;
-  width: 58px;
-  height: 58px;
+  min-width: 58px;
 }
 
 .contacts-fieldset__icon-email {
@@ -128,6 +147,5 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #e6e6e6;
-  width: 58px;
-  height: 58px;
+  min-width: 58px;
 }

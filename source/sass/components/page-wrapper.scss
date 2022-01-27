@@ -1,12 +1,16 @@
 .page-wrapper {
   max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     max-width: 1280px;
-    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }

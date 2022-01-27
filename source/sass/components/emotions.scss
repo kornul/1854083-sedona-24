@@ -1,14 +1,23 @@
 .emotions {
   border: none;
-  padding: 20px;
-  padding-bottom: 51px;
+  padding-top: 20px;
+  padding-right: 22px;
+  padding-left: 19px;
+  padding-bottom: 48px;
   margin: 0;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    display: grid;
-    padding: 0;
+    padding-top: 75px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
   }
 }
 
@@ -22,11 +31,11 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 15px;
-  padding-top: 20px;
+  padding: 0;
+
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 75px;
     font-size: 21px;
     margin-bottom: 54px;
 
@@ -36,8 +45,8 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      top: 85px;
-      transform: translateX(-160%);
+      left: 0;
+      top: 50%;
     }
 
     &::after {
@@ -46,20 +55,18 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      top: 85px;
-      transform: translateX(50%);
+      right: 0;
+      top: 50%;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       width: 280px;
-      transform: translateX(-125%);
     }
 
     &::after {
       width: 280px;
-      transform: translateX(25%);
     }
   }
 }
@@ -74,16 +81,30 @@
   background-color: #f2f2f2;
   resize: none;
   width: auto;
-  padding: 20px;
   border: none;
+  padding-top: 13px;
+  padding-right: 32px;
+  padding-bottom: 29px;
+  padding-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+    padding-right: 21px;
+    padding-bottom: 24px;
+    padding-left: 21px;
+  }
 }
 
 .emotions__wrapper {
+  padding-top: 51px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 58px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 58px;
   }
 }
 
@@ -101,7 +122,6 @@
   background-color: #81b3d2;
   border: none;
   color: #ffffff;
-  margin-top: 51px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
