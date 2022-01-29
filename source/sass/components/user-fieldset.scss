@@ -23,13 +23,19 @@
   }
 }
 
-.user-fieldset__wrap {
+.user-fieldset__wrapper {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.user-fieldset__inner {
   display: flex;
   margin-bottom: 20px;
   align-items: center;
 }
 
-.user-fieldset__wrap:last-child {
+.user-fieldset__inner:last-child {
   margin: 0;
 }
 
@@ -76,4 +82,13 @@
   padding-left: 22px;
   padding-bottom: 14px;
   font-weight: bold;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border-color: 4px solid #d5d5d5;
+  }
 }

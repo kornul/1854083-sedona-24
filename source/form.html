@@ -5,7 +5,7 @@
   <meta charset="utf-8" lang="ru">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -50,17 +50,14 @@
       </nav>
     </header>
 
-
-
     <main class="page-container">
       <section class="banner">
+        <h2 class="banner__subtitle visually-hidden">Заголовок</h2>
         <section class="banner__inner">
+          <h3 class="banner__caption visually-hidden">Седона</h3>
           <img class="banner__text" src="img/sedona.svg" width="229" height="39" alt="Седона">
         </section>
       </section>
-
-
-
 
       <section class="feedback">
         <div class="feedback__wrap">
@@ -76,61 +73,61 @@
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="user-fieldset">
-          <div class="user-fieldset__container">
+        <div class="user-fieldset">
+          <fieldset class="user-fieldset__wrapper">
             <legend class="user-fieldset__title">Представьтесь:</legend>
 
-            <label class="user-fieldset__wrap text-field">
+            <label class="user-fieldset__inner">
               <span class="user-fieldset__field-name">Имя*:</span>
               <input class="user-fieldset__input" type="text" name="name" required>
             </label>
 
 
-            <label class="user-fieldset__wrap text-field">
+            <label class="user-fieldset__inner">
               <span class="user-fieldset__field-name">Фамилия*:</span>
               <input class="user-fieldset__input" type="text" name="surname" required>
             </label>
 
 
-            <label class="user-fieldset__wrap text-field">
+            <label class="user-fieldset__inner">
               <span class="user-fieldset__field-name">Отсчество*:</span>
               <input class="user-fieldset__input" type="text" name="patronymic">
             </label>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
 
-        <fieldset class="contacts-fieldset">
-          <div class="contacts-fieldset__wrapper">
+        <div class="contacts-fieldset">
+          <fieldset class="contacts-fieldset__wrapper">
             <legend class="contacts-fieldset__title">Контактная информация:</legend>
-            <div class="contacts-fieldset__inner">
-              <label class="contacts-fieldset__container text-field">
-                <span class="contacts-fieldset__field-name contacts-fieldset__field-name__hidden"><span
+
+            <div class="contacts-fieldset__inner contacts-fieldset__inner-phone">
+              <label class="contacts-fieldset__container-phone">
+                <span class="contacts-fieldset__field-phone contacts-fieldset__field-name__hidden"><span
                     class="desktop-hidden">Контактный</span>
-                  телефон*:</span>
-                <div class="contacts-fieldset__input">
-                  <input class="text-field__input" type="text" placeholder="Введите телефон" required>
-                  <span class="contacts-fieldset__icon contacts-fieldset__icon-phone"></span>
-                </div>
-              </label>
-
-
-              <label class="contacts-fieldset__container text-field">
-                <span class="contacts-fieldset__field-name">Электронная
-                  почта*:</span>
-                <div class="contacts-fieldset__input contacts-fieldset__input-email">
-                  <input class="text-field__input" type="email" placeholder="Введите e-mail">
-                  <span class="contacts-fieldset__icon contacts-fieldset__icon-email"></span>
-                </div>
+                  телефон*:</span></label>
+              <div class="contacts-fieldset__holder">
+                <input class="contacts-fieldset__input" type="text" placeholder="Введите телефон" required>
+                <span class="contacts-fieldset__icon-phone"></span>
+              </div>
             </div>
-          </div>
-          </label>
-        </fieldset>
+
+            <div class="contacts-fieldset__inner contacts-fieldset__inner-email">
+              <label class="contacts-fieldset__container-email">
+                <span class="contacts-fieldset__field-email">Электронная
+                  почта*:</span>
+              </label>
+              <div class="contacts-fieldset__holder">
+                <input class="contacts-fieldset__input" type="email" placeholder="Введите e-mail">
+                <span class="contacts-fieldset__icon contacts-fieldset__icon-email"></span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
 
-
-        <fieldset class="impressions-fieldset">
-          <div class="impressions-fieldset__wrapper">
+        <div class="impressions-fieldset">
+          <fieldset class="impressions-fieldset-wrapper">
             <legend class="impressions-fieldset__title">Ваше общее впечатление:</legend>
 
 
@@ -158,12 +155,13 @@
                 <span class="radio-holder__input-text">Затрудняюсь ответить</span>
               </label>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="sight">
-          <div class="sight__inner">
-            <legend class="sight__tittle"><span class="sight__tittle-content">Посещенные достопримечательности:</span></legend>
+        <div class="sight">
+          <fieldset class="sight-inner">
+            <legend class="sight__tittle"><span class="sight__tittle-content">Посещенные достопримечательности:</span>
+            </legend>
 
             <div class="sight-wrapper">
               <div class="sight-container">
@@ -197,24 +195,24 @@
                   <span class="checkbox-holder__input-text">Красные скалы</span>
                 </label>
               </div>
-              </section>
             </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="emotions">
-          <div clas="emotions__container">
+        <div class="emotions">
+          <fieldset class="emotions__container">
             <legend class="emotions__title">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="comment">Комментарий</label>
             <textarea class="emotions__textarea" name="comment" placeholder="Опишите подробно все свои восторги"
               id="comment"></textarea>
-          </div>
 
+            <div class="emotions__wrapper">
+              <button class="emotions__submit" type="submit">Отправить Отзыв</button>
+              <p class="emotions__text">* — обязательные поля</p>
+            </div>
 
-          <div class="emotions__wrapper">
-            <button class="emotions__submit" type="submit">Отправить Отзыв</button>
-            <p class="emotions__text">* — обязательные поля</p>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
       </form>
     </main>
 
@@ -232,7 +230,6 @@
             </a>
           </li>
 
-          </li>
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__symbol-facebook" width="9" height="19">
@@ -240,6 +237,7 @@
               </svg>
             </a>
           </li>
+
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__symbol-youtube" width="20" height="14">
@@ -261,6 +259,7 @@
       </div>
     </footer>
   </div>
+
 
   <section class="popup-error">
     <div class="popup-error__container">

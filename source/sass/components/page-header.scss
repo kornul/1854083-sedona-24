@@ -3,6 +3,11 @@
   position: relative;
   margin: 0 auto;
   width: auto;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
 }
 
 .page-header__logo {
