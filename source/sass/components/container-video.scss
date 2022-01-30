@@ -145,21 +145,28 @@
   }
 }
 
+.container-video__toddler {
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  position: absolute;
+  top: 34%;
+  left: 21%;
+
+  @media (min-width: $tablet-width) {
+    top: 45%;
+    left: 32%;
+  }
+}
+
 .container-video__button-drag {
   position: absolute;
-  top: 15px;
-  left: 55px;
-  width: 13px;
-  height: 13px;
+  width: auto;
+  height: 100%;
   background-color: #ffffff;
   color: #ffffff;
   border-radius: 50%;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    top: 45%;
-    left: 200px;
-  }
 }
 
 
