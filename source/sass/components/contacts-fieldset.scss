@@ -71,6 +71,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+
     &::before {
       width: 280px;
     }
