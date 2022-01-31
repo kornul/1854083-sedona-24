@@ -16,17 +16,8 @@
   }
 }
 
-.reason-other--gray {
-  @media (min-width: $tablet-width) {
-    width: 256px;
-    margin-top: 42px;
-    margin-bottom: 41px;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 400px;
-  }
+.reason-other__header {
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .reason-other__header-square {
@@ -42,6 +33,7 @@
 
 .reason-other-road {
   padding: 24px 42px;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;

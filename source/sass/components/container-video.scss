@@ -1,6 +1,5 @@
 .container-video {
   margin: 0 auto;
-  padding-bottom: 49px;
   padding-top: 32px;
 
   @media (min-width: $tablet-width) {
@@ -63,8 +62,7 @@
 
 .container-video__clip {
   padding: 0;
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -81,6 +79,8 @@
 }
 
 .container-video__img {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 100%;
@@ -88,19 +88,31 @@
   }
 }
 
-.container-video__controls {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-  margin-left: 20px;
+.container-video__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -45px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding: 0;
+    height: 93px;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .container-video__scale {
   height: 45px;
-  position: absolute;
+  position: relative;
   background-color: rgba(0, 0, 0, 0.6);
-  bottom: 4px;
-  width: 280px;
+  bottom: 0;
+  width: auto;
 
   &::before {
     content: "";
@@ -114,15 +126,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    height: 93px;
     background-color: transparent;
 
     &::before {
       width: 389px;
-      top: -4px;
-      left: 70px;
+      top: 50%;
+      left: 95px;
+      background-color: rgba(255, 255, 255, 1);
     }
   }
+
 
   @media (min-width: $desktop-width) {
     &::before {
@@ -131,25 +145,28 @@
   }
 }
 
+.container-video__toddler {
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  position: absolute;
+  top: 34%;
+  left: 21%;
+
+  @media (min-width: $tablet-width) {
+    top: 45%;
+    left: 32%;
+  }
+}
+
 .container-video__button-drag {
   position: absolute;
-  top: 15px;
-  left: 55px;
-  width: 13px;
-  height: 13px;
+  width: auto;
+  height: 100%;
   background-color: #ffffff;
   color: #ffffff;
   border-radius: 50%;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    top: -9px;
-    left: 180px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 190px;
-  }
 }
 
 
@@ -157,8 +174,7 @@
   border: none;
   display: flex;
   height: 66px;
-  position: absolute;
-  bottom: -62px;
+  position: relative;
   width: 280px;
   background-color: #f2f2f2;
   align-items: center;
@@ -169,7 +185,7 @@
     left: 0;
     background-color: rgba(0, 0, 0, 1);
     opacity: 0.6;
-    bottom: 4px;
+    bottom: 0;
     height: 93px;
   }
 

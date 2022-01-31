@@ -24,6 +24,12 @@
   }
 }
 
+.sight-inner {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .sight__tittle-content {
   @media (min-width: $tablet-width) {
     display: inline-block;

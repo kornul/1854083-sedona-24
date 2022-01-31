@@ -5,7 +5,7 @@
   <meta charset="utf-8" lang="ru">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -52,14 +52,17 @@
 
     <main class="column">
       <section class="column__banner">
+        <h2 class="column__subtitle visually-hidden">Заголовок</h2>
         <section class="column__banner-inner">
+          <h3 class="column__caption visually-hidden">Cедона</h3>
           <img class="column__banner-text" src="img/sedonaform.svg" width="229" height="39" alt="Седона">
         </section>
       </section>
 
       <section class="container">
+        <h2 class="container__subtitles visually-hidden">Медиа</h2>
         <section class="container__wrapper">
-          <h1 class="container__title">Фото и видео</h1>
+          <h3 class="container__title">Фото и видео</h3>
           <p class="container__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
             политике
             и экономике.</p>
@@ -67,18 +70,20 @@
       </section>
 
       <section class="gallery">
+        <h2 class="gallery__subject visually-hidden">Галерея</h2>
         <div class="gallery__cardone">
           <div class="gallery__inner">
             <picture>
               <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/newdesktop@2x.webp 2x, img/newdesktop@1x.webp 1x">
+                srcset="img/roadphotodesktop@2x.webp 2x, img/roadphotodesktop@1x.webp 1x">
               <source type="image/webp" media="(min-width:768px)"
-                srcset="img/newtablet@2x.webp 2x, img/newtablet@1x.webp 1x">
+                srcset="img/roadphototablet@2x.webp 2x, img/roadphototablet@1x.webp 1x">
               <source type="image/webp" media="(min-width:320px)"
-                srcset="img/newmobile@2x.webp 2x, img/newmobile@1x.webp 1x">
-              <source media="(min-width:1200px)" srcset="img/roadphotodesktop@2x.jpg, img/roadphotodesktop@1x.jpg">
-              <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg, img/roadphototablet@1x.jpg">
-              <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg, img/roadphotomobile@1x.jpg">
+                srcset="img/roadphotomobile@2x.webp 2x, img/roadphotomobile@1x.webp 1x">
+              <source media="(min-width:1200px)"
+                srcset="img/roadphotodesktop@2x.jpg 2x, img/roadphotodesktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/roadphototablet@2x.jpg 2x, img/roadphototablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/roadphotomobile@2x.jpg 2x, img/roadphotomobile@1x.jpg 1x">
               <img class="gallery__img" src="img/road.jpg" width="280" height="280" alt="неродные просторы">
             </picture>
           </div>
@@ -97,9 +102,12 @@
         <div class="gallery__card">
           <div class="gallery__wrapper">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photodesktopplants@2x.jpg, img/photodesktopplants@1x.jpg">
-              <source media="(min-width:768px)" srcset="img/phototabletplants@2x.jpg, img/phototabletplants@1x.jpg">
-              <source media="(min-width:320px)" srcset="img/photomobileplants@2x.jpg, img/photomobileplants@1x.jpg">
+              <source media="(min-width:1200px)"
+                srcset="img/photodesktopplants@2x.jpg 2x, img/photodesktopplants@1x.jpg 1x">
+              <source media="(min-width:768px)"
+                srcset="img/phototabletplants@2x.jpg 2x, img/phototabletplants@1x.jpg 1x">
+              <source media="(min-width:320px)"
+                srcset="img/photomobileplants@2x.jpg 2x, img/photomobileplants@1x.jpg 1x">
               <img class="gallery__img" src="img/plants.jpg" width="280" height="280" alt="местная растительность">
             </picture>
           </div>
@@ -119,11 +127,11 @@
           <div class="gallery__wrapper">
             <picture>
               <source media="(min-width:1200px)"
-                srcset="img/northroadphotodesktop@2x.jpg, img/northroadphotodesktop@1x.jpg">
+                srcset="img/northroadphotodesktop@2x.jpg 2x, img/northroadphotodesktop@1x.jpg 1x">
               <source media="(min-width:768px)"
-                srcset="img/northroadphototablet@2x.jpg, img/northroadphototablet@1x.jpg">
+                srcset="img/northroadphototablet@2x.jpg 2x, img/northroadphototablet@1x.jpg 1x">
               <source media="(min-width:320px)"
-                srcset="img/northroadphotomobile@2x.jpg, img/northroadphotomobile@1x.jpg">
+                srcset="img/northroadphotomobile@2x.jpg 2x, img/northroadphotomobile@1x.jpg 1x">
               <img class="gallery__img" src="img/northroad.jpg" width="280" height="280" alt="дорога на север">
             </picture>
           </div>
@@ -142,9 +150,12 @@
         <div class="gallery__card">
           <div class="gallery__wrapper">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/desktopphotobridge@2x.jpg, img/desktopphotobridge@1x.jpg">
-              <source media="(min-width:768px)" srcset="img/tabletphotobridge@2x.jpg, img/tabletphotobridge@1x.jpg">
-              <source media="(min-width:320px)" srcset="img/mobilephotobridge@2x.jpg, img/mobilephotobridge@1x.jpg">
+              <source media="(min-width:1200px)"
+                srcset="img/desktopphotobridge@2x.jpg 2x, img/desktopphotobridge@1x.jpg 1x">
+              <source media="(min-width:768px)"
+                srcset="img/tabletphotobridge@2x.jpg 2x, img/tabletphotobridge@1x.jpg 1x">
+              <source media="(min-width:320px)"
+                srcset="img/mobilephotobridge@2x.jpg 2x, img/mobilephotobridge@1x.jpg 1x">
               <img class="gallery__img" src="img/devilbridge.jpg" width="280" height="280" alt="мост дьявола">
             </picture>
           </div>
@@ -159,46 +170,49 @@
             </div>
           </div>
         </div>
-
       </section>
 
-
       <section class="container-video">
+        <h2 class="container-video__heading visually-hidden">Видео</h2>
         <section class="container-video__wrapper">
-          <h2 class="container-video__title">Все еще сомневаетесь?</h2>
+          <h3 class="container-video__title">Все еще сомневаетесь?</h3>
           <p class="container-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
         </section>
         <div class="container-video__clip">
           <picture>
-            <source media="(min-width:1200px)" srcset="img/videodesktop@2x.jpg, img/videodesktop@1x.jpg">
-            <source media="(min-width:768px)" srcset="img/videotablet@2x.jpg, img/videotablet@1x.jpg">
-            <source media="(min-width:320px)" srcset="img/videomobile@2x.jpg, img/videomobile@1x.jpg">
+            <source media="(min-width:1200px)" srcset="img/videodesktop@2x.jpg 2x, img/videodesktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/videotablet@2x.jpg 2x, img/videotablet@1x.jpg 1x">
+            <source media="(min-width:320px)" srcset="img/videomobile@2x.jpg 2x, img/videomobile@1x.jpg 1x">
             <img class="container-video__img" src="img/videocatalog.jpg" width="320" height="201"
               alt="Видео про Седону">
           </picture>
-          <div class="container-video__controls">
-            <div class="container-video__scale">
-              <button class="container-video__button-drag" type="button">
+          <div class="container-video__inner">
+            <div class="container-video__controls">
+              <div class="container-video__scale">
+                <div class="container-video__toddler">
+                  <button class="container-video__button-drag" type="button">
+                </div>
                 <span class="visually-hidden">Изменить громкость</span>
-              </button>
-            </div>
-            <div class="container-video__bottons">
-              <button class="container-video__replay" type="button">
-                <svg class="container-video__icon-replay"  width="16" height="20">
-                  <use href="img/sprite.svg#replay"></use>
-                </svg>
-              </button>
-              <button class="container-video__subtitles" type="button">
-                <svg class="container-video__icon-subtitles" width="32" height="20">
-                  <use href="img/sprite.svg#subtitles"></use>
-                </svg>
-              </button>
-              <button class="container-video__fullscreen" type="button">
-                <svg class="container-video__icon-fullscreen" width="20" height="20">
-                  <use href="img/sprite.svg#fullscreen"></use>
-                </svg>
-              </button>
+                </button>
+              </div>
+              <div class="container-video__bottons">
+                <button class="container-video__replay" type="button">
+                  <svg class="container-video__icon-replay" width="16" height="20">
+                    <use href="img/sprite.svg#replay"></use>
+                  </svg>
+                </button>
+                <button class="container-video__subtitles" type="button">
+                  <svg class="container-video__icon-subtitles" width="32" height="20">
+                    <use href="img/sprite.svg#subtitles"></use>
+                  </svg>
+                </button>
+                <button class="container-video__fullscreen" type="button">
+                  <svg class="container-video__icon-fullscreen" width="20" height="20">
+                    <use href="img/sprite.svg#fullscreen"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -220,7 +234,6 @@
             </a>
           </li>
 
-          </li>
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__symbol-facebook" width="9" height="19">
@@ -228,6 +241,7 @@
               </svg>
             </a>
           </li>
+
           <li class="social__item">
             <a class="social__link" href="#">
               <svg class="social__symbol-youtube" width="20" height="14">
@@ -251,4 +265,5 @@
   </div>
   <script src="js/main.js"></script>
 </body>
+
 </html>

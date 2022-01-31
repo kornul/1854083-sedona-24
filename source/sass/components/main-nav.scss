@@ -68,6 +68,8 @@
 
 .main-nav--opened {
   @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 100%;
     z-index: 3;
   }
 }

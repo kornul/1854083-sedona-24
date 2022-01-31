@@ -25,6 +25,12 @@
   }
 }
 
+.impressions-fieldset-wrapper {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .impressions-fieldset::before {
   @media (min-width: $tablet-width) {
     position: absolute;
