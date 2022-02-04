@@ -18,13 +18,17 @@
 
 .reason-other__header {
   border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .reason-other__header-square {
   padding: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 42px;
+    padding-top: 40px;
     padding-bottom: 63px;
     padding-left: 33px;
     padding-right: 34px;
@@ -63,14 +67,19 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 23px;
+  margin-bottom: 14px;
   margin-top: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 86px;
+    padding-left: 85px;
+  }
 }
 
 .reason-other__number {
   align-items: center;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .reason-other__text {
@@ -82,4 +91,9 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+    padding-left: 21px;
+  }
 }
