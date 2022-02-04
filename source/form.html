@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
 
   <div class="page-wrapper">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="/img/logotypedesktop.svg">
@@ -19,7 +21,7 @@
           <img class="page-header__top-logo" src="img/logotypemobile.svg" width="102" height="84" alt="Седона">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>

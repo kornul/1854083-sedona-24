@@ -2,6 +2,8 @@
   background-color: #ffffff;
   width: auto;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr;
 
   @media (min-width: $tablet-width) {
     display: grid;

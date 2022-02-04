@@ -3,6 +3,7 @@
   position: relative;
   margin: 0 auto;
   width: auto;
+  z-index: 2;
   height: 56px;
 
   @media (min-width: $tablet-width) {
@@ -10,11 +11,19 @@
   }
 }
 
+.page-header--nojs {
+  height: auto;
+}
+
 .page-header__logo {
   position: absolute;
   left: 50%;
   z-index: 2;
   transform: translateX(-50%);
+}
+
+.page-header--nojs .page-header__logo {
+  z-index: 0;
 }
 
 .page-header__top-logo {

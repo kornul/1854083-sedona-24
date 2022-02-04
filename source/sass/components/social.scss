@@ -13,6 +13,7 @@
 }
 
 .social__item {
+  display: block;
   background-color: #81b3d2;
   list-style-type: none;
   width: 46px;
@@ -28,20 +29,34 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
-  &:active .social__wrapper {
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:focus {
+    outline: 1px solid #5496bd;
+  }
+
+  &:active {
     fill: #5496bd;
   }
 }
 
 .social__symbol-twitter {
-  position: absolute;
   fill: #ffffff;
   top: 17px;
   left: 15px;
   height: 15px;
   width: 17px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
 
   &:active {
     fill: #ffffff;
@@ -50,12 +65,15 @@
 }
 
 .social__symbol-facebook {
-  position: absolute;
   fill: #ffffff;
   width: 9px;
   height: 19px;
   top: 14px;
   left: 72px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
 
   &:active {
     fill: #ffffff;
@@ -64,12 +82,15 @@
 }
 
 .social__symbol-youtube {
-  position: absolute;
   fill: #ffffff;
   width: 20px;
   height: 14px;
   top: 17px;
   right: 13px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
 
   &:active {
     fill: #ffffff;
